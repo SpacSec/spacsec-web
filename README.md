@@ -20,4 +20,4 @@ make changes and refresh the webpage to see the results
 1. Every commit must include only one change or one feature.
 2. Add files ```git add -A``` to add all files or ```git add filename.extension```, to add individual files.
 3. Commit using ```git commit -M "message"```, messages must be simple and clear, or commit using VSCode.
-3. Pushing ```git push origin aditya```, to push to your own branch.
+3. Pushing ```git push origin main```.
