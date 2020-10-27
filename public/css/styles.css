@@ -1,5 +1,41 @@
-body,
-html {
+body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",
+        sans-serif;
+}
+
+/* navbar */
+.navbar {
+    min-height: 5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+.nav-cta {
+    color: white;
+    font-weight: bold;
+}
+/* header */
+.header{
+    margin-top: 5rem;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer */
+.footer {
+    height: 40vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 4rem 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+@media (min-width: 1200px) {
+   
 }
