@@ -17,13 +17,30 @@ body {
     font-weight: bold;
 }
 /* header */
-.header{
+header {
     margin-top: 5rem;
     height: 40vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;;
 }
+
+header h1 {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+}
+
+header p {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    width: 400px;
+    text-align: center;
+}
+
 /* footer */
 .footer {
     height: 40vh;
