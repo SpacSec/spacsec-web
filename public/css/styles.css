@@ -84,7 +84,14 @@ header p {
 }
 
 .speakers .speakers-r .speaker-card .card-body {
-    background-color: #59a9ff
+    background-color: #59a9ff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.speakers .speakers-r .speaker-card .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /* footer */
