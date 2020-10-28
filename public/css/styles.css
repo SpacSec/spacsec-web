@@ -82,13 +82,8 @@ header p {
   border-radius: 8px;
 }
 
-/* .speakers .speakers-r .speaker-card .card-img-top {
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-} */
-
 .speakers-head {
-  /* background-image: url("../speaker-head.jpg"); */
+  background-image: url("../speaker-head.jpg");
 }
 
 /* footer */
