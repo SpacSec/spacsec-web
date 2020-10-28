@@ -16,6 +16,7 @@ body {
     color: white;
     font-weight: bold;
 }
+
 /* header */
 header {
     margin-top: 5rem;
@@ -85,13 +86,17 @@ header p {
 
 .speakers .speakers-r .speaker-card .card-body {
     background-color: #59a9ff;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 
 .speakers .speakers-r .speaker-card .card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.speakers-head {
+    background-image: url("speaker-head.jpg");
 }
 
 /* footer */
