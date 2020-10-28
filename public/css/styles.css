@@ -41,8 +41,32 @@ header p {
     text-align: center;
 }
 
+/* tabs */
+.tab {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab .tab-heading {
+    text-align: center;
+    font-size: 32px;
+    display: block;
+}
+
+.tab .tab-content {
+    width: 400px;
+}
+
+.tab .tab-carousel {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 30px;
+}
+
 /* footer */
-.footer {
+footer {
     height: 40vh;
     width: 100%;
     background: #000;
@@ -50,7 +74,6 @@ header p {
     padding: 4rem 0;
     bottom: 0;
     right: 0;
-    position: absolute;
 }
 
 @media (min-width: 1200px) {
