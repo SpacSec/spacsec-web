@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav id='nav' class="navbar navbar-expand-lg navbar-light transparent fixed-top">
     <div class="container">
     <!-- navbar -->
     <a class="navbar-brand" href="#">
@@ -40,28 +40,28 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link navbar-link  <%= page_name === 'home' && 'active-route' %>" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tracks" data-target=".navbar-collapse.in">Tracks</a>
+          <a class="nav-link navbar-link <%= page_name === 'tracks' && 'active-route' %>" href="tracks" data-target=".navbar-collapse.in">Tracks</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="speakers" data-target=".navbar-collapse.in">Speakers</a>
+          <a class="nav-link navbar-link <%= page_name === 'speakers' && 'active-route' %>" href="speakers" data-target=".navbar-collapse.in">Speakers</a>
         </li>
        <li class="nav-item">
-          <a class="nav-link" href="schedule" data-target=".navbar-collapse.in">Schedule</a>
+          <a class="nav-link navbar-link <%= page_name === 'schedule' && 'active-route' %>" href="schedule" data-target=".navbar-collapse.in">Schedule</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="author-dashboard" data-target=".navbar-collapse.in">Author Dashboard</a>
+          <a class="nav-link navbar-link <%= page_name === 'author-dashboard' && 'active-route' %>" href="author-dashboard" data-target=".navbar-collapse.in">Author Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="committee" data-target=".navbar-collapse.in">Committee</a>
+          <a class="nav-link navbar-link <%= page_name === 'committee' && 'active-route' %>" href="committee" data-target=".navbar-collapse.in">Committee</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact" data-target=".navbar-collapse.in">Contact</a>
+          <a class="nav-link navbar-link <%= page_name === 'contact' && 'active-route' %>" href="contact" data-target=".navbar-collapse.in">Contact</a>
         </li>
         <li class="nav-item mx-lg-2">
-          <a class=" nav-cta btn btn-dark" href="register" data-target=".navbar-collapse.in">Register Now</a>
+          <a class="nav-cta btn btn-primary" href="register" data-target=".navbar-collapse.in">Register Now</a>
         </li>
       </ul>
     </div>
