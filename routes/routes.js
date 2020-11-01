@@ -3,28 +3,36 @@ const router = express.Router();
 
 //nav endpoints
 router.get("/", (req, res) => {
-  res.render("index");
+  const page_name = "home";
+  res.render("index", {page_name : page_name});
 });
 router.get("/tracks", (req, res) => {
-  res.render("tracks");
+  const page_name = "tracks";
+  res.render("tracks", {page_name : page_name});
 });
 router.get("/speakers", (req, res) => {
-  res.render("speakers");
+  const page_name = "speakers";
+  res.render("speakers", {page_name : page_name});
 });
 router.get("/schedule", (req, res) => {
-  res.render("schedule");
+  const page_name = "schedule";
+  res.render("schedule", {page_name : page_name});
 });
 router.get("/author-dashboard", (req, res) => {
-  res.render("author-dashboard");
+  const page_name = "author-dashboard";
+  res.render("author-dashboard", {page_name : page_name});
 });
 router.get("/committee", (req, res) => {
-  res.render("committee");
+  const page_name = "committee";
+  res.render("committee", {page_name : page_name});
 });
 router.get("/contact", (req, res) => {
-  res.render("contact");
+  const page_name = "contact";
+  res.render("contact", {page_name : page_name});
 });
 router.get("/register", (req, res) => {
-  res.render("register");
+  const page_name = "register";
+  res.render("register", {page_name : page_name});
 });
 
 module.exports = router;
