@@ -18,7 +18,6 @@ const colorBackground = () => {
   if (!(nav.classList.contains("navbar-color"))) {
     nav.classList.toggle("navbar-color");
   }
-  console.log("test");
 };
 
 navToggler.addEventListener("click", colorBackground);
