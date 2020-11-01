@@ -10,7 +10,7 @@
   --shadow-blue-hover: 0px 0px 40px rgba(49, 107, 255, 0.5);
 }
 
-.btn-primary {
+.btn {
   font-weight: 600;
   text-transform: uppercase;
   border: 2px solid;
