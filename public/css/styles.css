@@ -494,7 +494,20 @@ footer h5 {
     margin: auto;
   }
 }
-
+.form-responses-container {
+  display: flex;
+  flex-direction: column;
+}
+.response-card {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+}
+.count {
+  text-align: center;
+  font-weight: 500;
+}
 /**************** quaries ****************/
 @media (max-width: 576px) {
 }

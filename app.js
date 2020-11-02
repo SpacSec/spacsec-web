@@ -68,8 +68,7 @@ const User = mongoose.model("User", userSchema);
 app.post("/login", (req, res) => {
   const username = req.body.iusername;
   const password = md5(req.body.ipassword);
-  const page_name = "login";
-  console.log(username, password);
+  let page_name = "login";
   User.findOne({ username: username }, (err, foundUser) => {
     if (err) {
       console.log("nope");
@@ -79,7 +78,19 @@ app.post("/login", (req, res) => {
         if (foundUser.password === password) {
           console.log("correct password");
           page_name = "loggedin";
-          res.render("auth/showFormResponses", { page_name: page_name });
+
+          //retrieving data
+          
+          db.collection("messages").find().toArray((err, results) => {
+            if (err) {
+              console.log(err);
+              res.render("auth/login", { page_name: page_name });
+            }
+            else {
+              let responses = results;
+              res.render("auth/showFormResponses", { page_name: page_name, responses:responses });
+            }
+          });
         } else {
           res.render("auth/login", { page_name: page_name });
           console.log("wrong password");

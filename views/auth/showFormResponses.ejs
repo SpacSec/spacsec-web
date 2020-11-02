@@ -3,7 +3,23 @@
   <h1>Contact Form Responses</h1>
   <p>View all the responses revived from the contact from.</p>
 </header>
-<section class="container">
-  <p>hello</p>
+<section class="container form-responses-container">
+  <p class="count"><%= responses.length %> responses found</p>
+  <% responses.map((item)=>{ %>
+  <!-- <p>Name - <%= item %></p> -->
+  <div class="response-card">
+    <p>Name - <%= item.name %></p>
+    <p>
+      Email -
+      <a
+        rel="noopner noreferer"
+        target="_BLANK"
+        href="mailto:s<%= item.email %>"
+        ><%= item.email %></a
+      >
+    </p>
+    <p>Message - <%= item.message %></p>
+  </div>
+  <% }) %>
 </section>
 <%- include("../includes/footer") -%>
