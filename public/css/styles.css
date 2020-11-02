@@ -45,6 +45,38 @@ h5 {
   font-weight: bold;
   margin: 1rem;
 }
+section {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+section h3 {
+  text-align: center;
+  /* margin-top: 4rem; */
+  margin-bottom: 3rem;
+  cursor: default;
+}
+section h3::after {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  content: "";
+  color: transparent;
+  background: var(--primary-blue);
+  height: 4px;
+  box-shadow: var(--shadow-blue);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+section h3:hover::after {
+  width: 200px;
+  cursor: default;
+}
+
 /************** navbar ***************/
 .navbar {
   min-height: 5rem;
@@ -79,7 +111,6 @@ h5 {
   content: ".";
   color: transparent;
   background: var(--primary-blue);
-  height: 4px;
   height: 4px;
   border-radius: 4px;
 }
@@ -236,16 +267,51 @@ header div {
   /* background-color: var(--primary-black); */
 }
 
-.home-about {
-  margin: 4rem auto;
-}
-.home-about h3 {
-  text-align: center;
-}
 .home-about p {
   color: var(--primary-black);
 }
+.home-speakers {
+  background-color: var(--secondary-gray);
+}
+.home-speakers h3 {
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+}
 
+.contact-form .map {
+  width: 50%;
+  margin-right: 1rem;
+}
+.contact-form .form {
+  width: 50%;
+  margin-left: 1rem;
+}
+
+.contact-details p {
+  text-align: center;
+  margin: 0.2rem;
+  font-weight: 500;
+  color: var(--neutral-gray2);
+}
+.contact-details {
+  margin-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .contact-form {
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact-form .map {
+    display: none;
+  }
+  .contact-form .form {
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
 /*************** tracks ****************/
 /* tabs */
 .tracks {
@@ -318,7 +384,6 @@ header div {
   justify-content: center;
   align-items: center;
 }
-
 .speaker-card {
   margin: 2rem;
 }
