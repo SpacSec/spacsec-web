@@ -23,6 +23,7 @@
     </div>
   </div>
 </header>
+
 <!-- sponsor -->
 <section class="home-sponsors">spon</section>
 <!-- about -->
@@ -77,4 +78,16 @@
       <%- include("./components/contact-form.ejs") -%>
     </div>
 </section>
+ <!-- toast -->
+  <% if(success === "true") { %>
+    <% console.log("h"); %>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <strong class="mr-auto">Message Sent Successfully</strong>
+  </div>
+  <div class="toast-body">
+    Thanks for sending the message, we will get back to you as soon as possible
+  </div>
+</div>
+<% } %>
 <%- include("./includes/footer") -%>

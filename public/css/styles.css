@@ -27,6 +27,7 @@
   text-transform: uppercase;
 }
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,6 +45,30 @@ h4,
 h5 {
   font-weight: bold;
   margin: 1rem;
+}
+.toast {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 75vh;
+  left: 2rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 300px;
+  border-radius: 4px;
+}
+.toast-header {
+  border-radius: 4px 4px 0 0;
+  background-color: #48bb78;
+  color: white;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.toast-body {
+  border-radius: 0 0 14px 4px;
+  background-color: var(--secondary-gray);
+  padding: 1rem;
 }
 section {
   position: relative;
@@ -144,7 +169,10 @@ section h3:hover::after {
   transform: scale(1.2);
   background-color: var(--secondary-blue);
 }
-
+.nav-logout {
+  color: red;
+  font-weight: bold;
+}
 @media (max-width: 992px) {
   .navbar {
     padding-top: 1.25rem;
@@ -444,6 +472,26 @@ footer h5 {
   }
   .footer-content div {
     margin-top: 1rem;
+  }
+}
+/**************** auth form ****************/
+.auth-header {
+  height: 20vh;
+}
+.auth-form {
+  width: 30%;
+  margin: auto;
+}
+.auth-form form {
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: var(--secondary-gray);
+}
+@media (max-width: 992px) {
+  .auth-form {
+    width: 90%;
+    margin: auto;
   }
 }
 
