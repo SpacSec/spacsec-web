@@ -3,8 +3,9 @@ const router = express.Router();
 
 //nav endpoints
 router.get("/", (req, res) => {
+  const success = "false";
   const page_name = "home";
-  res.render("index", {page_name : page_name});
+  res.render("index", {page_name : page_name, success : success});
 });
 router.get("/tracks", (req, res) => {
   const page_name = "tracks";
@@ -33,6 +34,12 @@ router.get("/contact", (req, res) => {
 router.get("/register", (req, res) => {
   const page_name = "register";
   res.render("register", {page_name : page_name});
+});
+
+//auth
+router.get("/login", (req, res) => {
+  const page_name = "login";
+  res.render("auth/login", {page_name : page_name});
 });
 
 module.exports = router;
