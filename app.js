@@ -12,6 +12,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //static assets
 app.use(express.static(__dirname + "/public"));
+app.use("/css", express.static(__dirname + 'public/css'));
+app.use("/js", express.static(__dirname + 'public/js'));
+app.use("/images", express.static(__dirname + 'public/css'));
 
 // Set the view engine to ejs
 app.set("view engine", "ejs");
