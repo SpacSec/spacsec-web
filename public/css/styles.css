@@ -443,9 +443,14 @@ header div {
 }
 
 /***************** schedule *****************/
+.schedules-header {
+  background-image: url("/images/schedules-head.png");
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .timeline .timeline-row {
@@ -484,7 +489,7 @@ header div {
   height: 1000px;
   width: 8px;
   position: absolute;
-  transform: translate(431px, 70px);
+  transform: translate(431px, 110px);
 }
 
 .timeline .timeline-row .event {
