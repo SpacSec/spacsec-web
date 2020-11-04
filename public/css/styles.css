@@ -428,6 +428,67 @@ header div {
     flex-direction: column;
   }
 }
+
+/***************** schedule *****************/
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline .timeline-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline .timeline-row .date, .timeline .timeline-row .event {
+  border: 3px solid;
+  border-radius: 4px;
+  border-color: var(--primary-blue);
+} 
+
+.timeline .timeline-row .date {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3d3e53;
+  padding-top: 15px;
+}
+
+.timeline .timeline-row .roadmap-point {
+  background-color: #c7c7c7;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  transform: translateY(-20px)
+}
+
+.roadmap-path {
+  background-color: #c7c7c7;
+  height: 1000px;
+  width: 8px;
+  position: absolute;
+  transform: translate(431px, 70px);
+}
+
+.timeline .timeline-row .event {
+  width: 750px;
+  height: 140px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  color: #3d3e53;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.timeline .timeline-row b {
+  color: black;
+  font-size: 21px;
+}
+
 /***************** footer *****************/
 footer {
   background: var(--primary-black);
