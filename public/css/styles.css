@@ -2,16 +2,24 @@
 :root {
   --primary-blue: #316bff;
   --primary-black: #1a2447;
-  --secondary-gray: #f4f7ff;
+  --secondary-gray: #fafbff;
   --secondary-blue: #1a4ccc;
   --neutral-gray1: #e6e7f3;
   --neutral-gray2: #3d3e53;
   --gray1: #e6e7f3;
-  --shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  --shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
   --shadow-blue: 0px 0px 10px rgba(49, 107, 255, 0.2);
   --shadow-blue-hover: 0px 0px 40px rgba(49, 107, 255, 0.5);
+  --primary-gradient: linear-gradient(
+    210deg,
+    rgba(49, 210, 255, 1) 14%,
+    rgba(49, 107, 255, 1) 50%,
+    rgba(26, 76, 204, 1) 82%
+  );
 }
-
+.container {
+  overflow: hidden;
+}
 .btn {
   font-weight: 600;
   text-transform: uppercase;
@@ -110,7 +118,7 @@ section h3:hover::after {
   background-color: rgba(0, 0, 0, 0);
 }
 .navbar-color {
-  box-shadow: var(--shadow);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   background-color: var(--secondary-gray) !important;
 }
 .navbar-toggler span {
@@ -232,12 +240,7 @@ header h1 {
     rgba(49, 107, 255, 1) 50%,
     rgba(26, 76, 204, 1) 82%
   );
-  background: linear-gradient(
-    210deg,
-    rgba(49, 210, 255, 1) 14%,
-    rgba(49, 107, 255, 1) 50%,
-    rgba(26, 76, 204, 1) 82%
-  );
+  background: var(--primary-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -248,7 +251,7 @@ header h1 {
 
 header p {
   color: var(--neutral-gray2);
-  font-size: 18px;
+  /* font-size: 1rem; */
   width: 400px;
   padding: auto 2rem;
   text-align: center;
@@ -294,6 +297,8 @@ header div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background-color: var(--secondary-gray);
   /* background-color: var(--primary-black); */
 }
@@ -435,8 +440,12 @@ header div {
 }
 
 /***************** schedule *****************/
-
+.schedule {
+  background: var(--secondary-gray);
+  padding: 2rem;
+}
 .timeline {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 40px;
@@ -449,11 +458,13 @@ header div {
   justify-content: center;
 }
 
-.timeline .timeline-row .date, .timeline .timeline-row .event {
-  border: 3px solid;
-  border-radius: 4px;
-  border-color: white;
-} 
+.timeline .timeline-row .date,
+.timeline .timeline-row .event {
+  /* border: 3px solid; */
+  border-radius: 8px;
+  /* border-color: white; */
+  background: white;
+}
 
 .timeline .timeline-row .date {
   width: 100px;
@@ -463,112 +474,164 @@ header div {
   margin-bottom: 30px;
   color: #3d3e53;
   padding-top: 15px;
-  box-shadow: 0px 0px 20px rgba(0, 4, 255, 0.5)
+  /* box-shadow: 0px 0px 20px rgba(0, 4, 255, 0.5); */
+  box-shadow: var(--shadow);
 }
 
 .timeline .timeline-row .roadmap-point {
-  background-color: #c7c7c7;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  transform: translateY(-20px)
+  background: white;
+  height: 15px;
+  width: 15px;
+  border: 3px solid var(--primary-blue);
+  border-radius: 50%;
+  transform: translateY(-20px);
 }
 
 .roadmap-path {
-  background-color: #c7c7c7;
-  height: 1000px;
-  width: 8px;
+  background: var(--primary-gradient);
+  height: 780px;
+  width: 4px;
   position: absolute;
-  transform: translate(225px, 80px);
+  transform: translate(228px, 80px);
 }
 
 .timeline .timeline-row .event {
   width: 750px;
-  height: 140px;
+  height: 100px;
   margin-left: 50px;
   margin-bottom: 30px;
   color: #3d3e53;
-  padding-top: 30px;
-  padding-left: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 4, 255, 0.5)
+  padding: 1rem;
+  border-radius: 8px;
+  /* box-shadow: 0px 0px 20px rgba(0, 4, 255, 0.5); */
+  box-shadow: var(--shadow);
 }
 
 .timeline .timeline-row b {
   color: black;
   font-size: 21px;
 }
+@media (max-width: 992px) {
+  .core-committee-row,
+  .advisory-committee-row,
+  .technical-committee-row,
+  .sponsor-row {
+    flex-direction: column;
+  }
 
-/***************** committee *****************/
-.member-designation {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 10px;
-  color: black;
+  .timeline .timeline-row .roadmap-point,
+  .roadmap-path {
+    display: none;
+  }
+  .timeline .timeline-row {
+    align-items: flex-start;
+    display: ;
+  }
+  .timeline .timeline-row b {
+    font-size: 16px;
+  }
+
+  .timeline .timeline-row .date,
+  .timeline .timeline-row .event {
+    height: max-content;
+    padding: 1rem;
+  }
+
+  .timeline .timeline-row .date {
+    width: 30%;
+    height: 100%;
+    margin: 0px;
+    margin-bottom: 2rem;
+    background: var(--secondary-gray);
+    box-shadow: none;
+    /* margin-top: -50px;
+    margin-right: 325px; */
+  }
+
+  .timeline .timeline-row .event {
+    width: 100%;
+    margin: 0;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    /* margin-bottom: 50px; */
+  }
 }
 
+/***************** committee *****************/
+.committee section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.committee section h3::after {
+  top: 60%;
+}
 .core-committee {
+  background: var(--secondary-gray);
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  padding-bottom: 2rem;
 }
 
 .core-committee-row {
   display: flex;
+
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  margin: 30px;
+  margin: 1rem;
 }
 
 .core-committee .core-committee-row .member {
   text-align: center;
-  font-size: 18px;
-  color: #3d3e53;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding: 1rem;
   width: 370px;
 }
 
 .core-committee .core-committee-row .member .member-name {
-  font-size: 22px;
-  letter-spacing: 1.3px;
-  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
-
+.event-designation {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-blue);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.designation {
+  margin-top: 0.5rem;
+}
 .technical-committee {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  padding-bottom: 2rem;
 }
 
 .technical-committee-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  margin: 30px;  
+  margin-top: 2rem;
 }
 
 .technical-committee .technical-committee-row .member {
   text-align: center;
-  font-size: 18px;
-  color: #3d3e53;
-  margin-left: 30px;
-  margin-right: 30px;
+  /*  */
+  /* color: #3d3e53; */
+  margin-left: 2rem;
+  margin-right: 2rem;
   width: 300px;
 }
 
 .technical-committee .technical-committee-row .member .member-name {
-  font-size: 22px;
-  letter-spacing: 1.3px;
-  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .advisory-committee {
@@ -576,31 +639,29 @@ header div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  padding-bottom: 2rem;
+  background: var(--secondary-gray);
 }
 
 .advisory-committee-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  margin: 30px;  
+  margin: 1rem;
 }
 
 .advisory-committee .advisory-committee-row .member {
   text-align: center;
-  font-size: 18px;
-  color: #3d3e53;
-  margin-left: 30px;
-  margin-right: 30px;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
   width: 300px;
 }
 
 .advisory-committee .advisory-committee-row .member .member-name {
-  font-size: 22px;
-  letter-spacing: 1.3px;
-  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .sponsors {
@@ -608,31 +669,32 @@ header div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 2rem;
 }
 
 .sponsor-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  margin: 30px; 
 }
 
 .sponsors .sponsor-row .sponsor {
   text-align: center;
-  font-size: 18px;
   color: #3d3e53;
   margin-left: 30px;
   margin-right: 30px;
   width: 370px;
 }
-
+.sponsor-description {
+  color: var(--secondary-blue);
+  font-weight: 500;
+  text-transform: uppercase;
+}
 .sponsors .sponsor-row .sponsor .sponsor-name {
-  font-size: 22px;
-  letter-spacing: 1.3px;
-  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
 .sponsors .sponsor-row .sponsor .sponsor-img-1 {
@@ -642,7 +704,17 @@ header div {
 .sponsors .sponsor-row .sponsor .sponsor-img-2 {
   width: 250px;
 }
-
+@media (max-width: 992px) {
+  .member {
+    margin: 1rem auto;
+  }
+  .core-committee-row,
+  .advisory-committee-row,
+  .sponsor-row,
+  .technical-committee-row {
+    flex-wrap: wrap;
+  }
+}
 /***************** dashboard *****************/
 /* tabs */
 
@@ -800,40 +872,6 @@ footer h5 {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  .core-committee-row, .advisory-committee-row, .technical-committee-row, .sponsor-row {
-    flex-direction: column;
-  }
-
-  .timeline .timeline-row .roadmap-point, .roadmap-path {
-    display: none;
-  }
-
-  .timeline .timeline-row b {
-    font-size: 16px;
-  } 
-
-  .timeline .timeline-row .date {
-    font-size: 13px;
-    width: 70px;
-    height: 70px;
-    padding-top: 10px;
-    margin: 0px;
-    margin-top: -50px;
-    margin-right: 325px;
-    position: absolute;
-  }
-
-  .timeline .timeline-row .event {
-    font-size: 14px;
-    width: 300px;
-    height: 120px;
-    padding-top: 5px;
-    margin: 0px;
-    margin-bottom: 50px;
-    margin-left: 80px;
-  }
-}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
