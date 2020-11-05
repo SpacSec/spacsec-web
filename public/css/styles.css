@@ -350,10 +350,6 @@ header div {
 /*************** tracks ****************/
 /* tabs */
 
-.tracks-header {
-  background-image: url("/images/tracks-head.jpg");
-}
-
 .tracks {
   display: flex;
   flex-direction: column;
