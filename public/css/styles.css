@@ -291,9 +291,9 @@ header div {
 }
 .home-sponsors {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh;
   background-color: var(--secondary-gray);
   /* background-color: var(--primary-black); */
 }
@@ -607,7 +607,7 @@ header div {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .sponsor-row {
