@@ -479,7 +479,7 @@ header div {
   height: 1000px;
   width: 8px;
   position: absolute;
-  transform: translate(431px, 110px);
+  transform: translate(225px, 80px);
 }
 
 .timeline .timeline-row .event {
@@ -746,6 +746,34 @@ footer h5 {
 @media (max-width: 992px) {
   .core-committee-row, .advisory-committee-row, .technical-committee-row, .sponsor-row {
     flex-direction: column;
+  }
+
+  .timeline .timeline-row .roadmap-point, .roadmap-path {
+    display: none;
+  }
+
+  .timeline .timeline-row b {
+    font-size: 16px;
+  } 
+
+  .timeline .timeline-row .date {
+    font-size: 14px;
+    width: 70px;
+    height: 70px;
+    padding-top: 0px;
+    margin: 0px;
+    margin-top: -350px;
+    margin-right: 325px;
+    position: absolute;
+  }
+
+  .timeline .timeline-row .event {
+    font-size: 14px;
+    width: 400px;
+    height: 120px;
+    padding-top: 20px;
+    margin: 0px;
+    margin-bottom: 128px;
   }
 }
 
