@@ -1,9 +1,164 @@
 <%- include("./includes/navbar") -%>
-<header>
+<header class="dashboard-header">
   <h1>Author Dashboard</h1>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum,
     nobis laudantium, voluptatum iure voluptatibus ea
   </p>
 </header>
+<div class="container"> <!--
+  <div class="dashboard">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="paper-submission-tab" data-toggle="tab" href="#paper-submission" role="tab">
+          Paper Submission/Redraft
+        </a>
+
+        <a class="nav-item nav-link active" id="publication-tab" data-toggle="tab" href="#publication" role="tab">
+          Publication
+        </a>
+
+        <a class="nav-item nav-link active" id="guidlines-tab" data-toggle="tab" href="#guidelines" role="tab">
+          Author Guidelines
+        </a>
+
+        <a class="nav-item nav-link active" id="paper-submission-tab" data-toggle="tab" href="#accomodation" role="tab">
+          Accomodation Details
+        </a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="container tab-pane fade show active" id="paper-submission" role="tabpanel">
+        <div class="dashboard-info">
+          <div>
+            <h3>Paper Submission/Redraft</h3>
+            <p>
+              <h4>Paper Submission Guidelines</h4>
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container tab-pane fade show active" id="publication" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="dashboard-info">
+          <div>
+            <h3>Publication</h3>
+            <p>
+              <h4>Conference Proceedings</h4>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container tab-pane fade show active" id="guidelines" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="dashboard-info">
+          <div>
+            <h3>Author Guidelines</h3>
+            <p>
+              <h4></h4>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container tab-pane fade show active" id="accomodation" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="dashboard-info">
+          <div>
+            <h3>Accomodation Details</h3>
+            <p>
+              <h4></h4>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+-->
+<div class="dashboard">
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a
+        class="nav-item nav-link active"
+        id="submission-tab"
+        data-toggle="tab"
+        href="#submission"
+        role="tab"
+        >Paper Submission/Redraft</a
+      >
+      <a
+        class="nav-item nav-link"
+        id="guidelines-tab"
+        data-toggle="tab"
+        href="#guidelines"
+        role="tab"
+        >Author Guidelines</a
+      >
+      <a
+        class="nav-item nav-link"
+        id="accomodation-tab"
+        data-toggle="tab"
+        href="#accomodation"
+        role="tab"
+        >Accomodation Details</a
+      >
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div
+      class="container tab-pane fade show active"
+      id="submission"
+      role="tabpanel"
+    >
+      <div class="dashboard-info">
+        <div>
+          <h3>Paper Submission/Redraft</h3>
+          <p>
+            Cyberwarfare refers to the use of digital attacks like computer
+            viruses and hacking by one country to disrupt the vital computer
+            systems of another, with the aim of creating damage, death and
+            destruction.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container tab-pane fade"
+      id="guidelines"
+      role="tabpanel"
+      aria-labelledby="nav-profile-tab"
+    >
+      <div class="dashboard-info">
+        <div>
+          <h3>Author Guidelines</h3>
+          <p>
+            Cyber security is the practice of defending computers, servers,
+            mobile devices, electronic systems, networks, and data from
+            malicious attacks. It's also known as information technology
+            security or electronic information security.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container tab-pane fade"
+      id="accomodation"
+      role="tabpanel"
+      aria-labelledby="nav-contact-tab"
+    >
+      <div class="dashboard-info">
+          <div>
+            <h3>Accomodation Details</h3>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <%- include("./includes/footer") -%>
