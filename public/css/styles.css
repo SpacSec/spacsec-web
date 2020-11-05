@@ -268,7 +268,6 @@ header div {
 .home-header {
   min-height: 60vh;
   position: relative;
-  background-image: url("/images/home-head-alt-3.jpg");
 }
 .details {
   color: var(--neutral-gray2);
