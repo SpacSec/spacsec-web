@@ -498,8 +498,45 @@ header div {
 }
 
 /***************** committee *****************/
+.member-designation {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
 
+.core-committee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
 
+.core-committee-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.member {
+  text-align: center;
+  font-size: 18px;
+  color: #3d3e53;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 370px;
+}
+
+.member-name {
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  color: rgb(0, 0, 0);
+}
 
 /***************** footer *****************/
 footer {
