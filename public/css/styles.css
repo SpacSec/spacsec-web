@@ -757,23 +757,24 @@ footer h5 {
   } 
 
   .timeline .timeline-row .date {
-    font-size: 14px;
+    font-size: 13px;
     width: 70px;
     height: 70px;
-    padding-top: 0px;
+    padding-top: 10px;
     margin: 0px;
-    margin-top: -350px;
+    margin-top: -50px;
     margin-right: 325px;
     position: absolute;
   }
 
   .timeline .timeline-row .event {
     font-size: 14px;
-    width: 400px;
+    width: 300px;
     height: 120px;
-    padding-top: 20px;
+    padding-top: 5px;
     margin: 0px;
-    margin-bottom: 128px;
+    margin-bottom: 50px;
+    margin-left: 80px;
   }
 }
 
