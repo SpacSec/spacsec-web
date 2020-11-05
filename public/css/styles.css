@@ -405,9 +405,6 @@ header div {
 }
 
 /**************** speakers ****************/
-.speakers-header {
-  background-image: url("/images/speaker-head.jpg");
-}
 
 .speakers {
   display: flex;
