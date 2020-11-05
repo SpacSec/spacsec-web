@@ -436,9 +436,6 @@ header div {
 }
 
 /***************** schedule *****************/
-.schedules-header {
-  background-image: url("/images/schedules-head.png");
-}
 
 .timeline {
   display: flex;
