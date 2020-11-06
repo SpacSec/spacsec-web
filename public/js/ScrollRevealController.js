@@ -1,5 +1,4 @@
 
-ScrollReveal().reveal('section',{ delay: 375, reset: false });
 const revealCards = {
     easing: 'ease-in',
     delay: 375,
@@ -20,10 +19,9 @@ var slideUp = {
     // opacity: 0,
     reset: false,
 };
+ScrollReveal().reveal('section',reveal);
 ScrollReveal().reveal('.home-header, header', slideUp);
 ScrollReveal().reveal('.tracks, .home-about', reveal);
 ScrollReveal().reveal('.card, .member', revealCards);
 ScrollReveal().reveal('.timeline-row', reveal);
 ScrollReveal().reveal('.timeline-point, .roadmap-path',reveal);
-    // ScrollReveal().reveal('.timeline-path', {
-    // delay: 2000, reset: false  });
