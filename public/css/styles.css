@@ -526,7 +526,6 @@ header div {
   }
   .timeline .timeline-row {
     align-items: flex-start;
-    display: ;
   }
   .timeline .timeline-row b {
     font-size: 16px;
@@ -775,6 +774,43 @@ header div {
   justify-content: space-between;
   text-align: center;
 }
+
+.dashboard-table {
+  border: 4px solid black;
+  border-radius: 4px;
+  margin-bottom: 8rem;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  border: 2px solid grey;
+  width: 420px;
+}
+
+.dashboard-table th {
+  text-align: center;
+}
+
+.dashboard-table td {
+  vertical-align: text-top;
+  padding-top: 0.5rem;
+}
+
+.dashboard-table .dashboard-list {
+  list-style-type: none;
+}
+
+.dashboard-table .dashboard-list a:link,
+.dashboard-table .dashboard-list a:visited,
+.dashboard-table .dashboard-list a:active {
+  text-decoration: underline;
+}
+
+.dashboard-table .dashboard-list a:hover {
+  text-decoration: none;
+}
+
+
 @media (max-width: 992px) {
   .dashboard-info {
     flex-direction: column;
