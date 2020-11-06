@@ -2,12 +2,13 @@
 :root {
   --primary-blue: #316bff;
   --primary-black: #1a2447;
-  --secondary-gray: #fafbff;
+  --secondary-gray: #f8faff;
   --secondary-blue: #1a4ccc;
   --neutral-gray1: #e6e7f3;
   --neutral-gray2: #3d3e53;
   --gray1: #e6e7f3;
-  --shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  --shadow: 0 8px 16px 0 rgba(17, 10, 99, 0.04),
+    0 12px 22px 0 rgba(128, 118, 247, 0.04);
   --shadow-blue: 0px 0px 10px rgba(49, 107, 255, 0.2);
   --shadow-blue-hover: 0px 0px 40px rgba(49, 107, 255, 0.5);
   --primary-gradient: linear-gradient(
@@ -20,6 +21,7 @@
 .container {
   overflow: hidden;
 }
+
 .btn {
   font-weight: 600;
   text-transform: uppercase;
@@ -356,11 +358,19 @@ header div {
 /* tabs */
 
 .tracks {
+  /* background: var(--secondary-gray); */
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 4rem;
+}
+.tracks section {
+  padding-top: 1rem;
+}
+.tracks section h3::after {
+  display: none;
 }
 .nav-tabs .nav-item,
 .nav-tabs {
@@ -369,9 +379,11 @@ header div {
 }
 .nav-tabs .active {
   font-weight: bold;
-  background-color: "white";
 }
-
+/* .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background: var(--secondary-gray);
+} */
 .nav-tabs .active::after {
   position: absolute;
   bottom: 0;
@@ -410,7 +422,9 @@ header div {
 }
 
 /**************** speakers ****************/
-
+.speaker-page {
+  background: var(--secondary-gray);
+}
 .speakers {
   display: flex;
   flex-direction: column;
@@ -426,12 +440,21 @@ header div {
   justify-content: center;
   align-items: center;
 }
+.card {
+  border: none;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+}
 .speaker-card {
   margin: 2rem;
 }
 
 .card-body {
   border-radius: 8px;
+  border: none;
 }
 
 @media (max-width: 992px) {
