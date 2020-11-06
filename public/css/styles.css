@@ -810,6 +810,55 @@ header div {
   text-decoration: none;
 }
 
+.dashboard-snip .snip-bold {
+  font-weight: bolder;
+}
+
+.dashboard-snip a:link,
+.dashboard-snip a:visited,
+.dashboard-snip a:active {
+  text-decoration: underline;
+}
+
+.dashboard-snip a:hover {
+  text-decoration: none;
+}
+
+.snip-table {
+  border: 4px solid black;
+  width: 900px;
+}
+
+.snip-titile {
+  margin-left: -0.25rem;
+}
+
+#d-1, #d-2, #d-3, #d-4, #d-5, #d-6, #d-7, #d-8, #d-9, #d-10, #d-11, #d-12, #d-13, #d-14, #d-15, #d-16, #d-17, #d-18, #d-19, #d-20, #d-21, #d-22, #d-23, #d-24, #d-25{
+  border-top: 1px solid black;
+}
+
+.before-submitting, .preparing-manuscript, .after-acceptance {
+  border-top: 3px solid black;
+}
+
+.snip-table tr td {
+  border: 2px solid grey;
+}
+
+.snip-example {
+  padding-left: 3rem;
+  border-left: 5px solid blue;
+  border-radius: 2px;
+  display: inline-block;
+  width: 56.25rem;
+  box-shadow: var(--shadow);
+}
+
+.dashboard-snip {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
 
 @media (max-width: 992px) {
   .dashboard-info {
