@@ -811,38 +811,54 @@ header div {
   text-align: center;
 }
 
-.dashboard-table {
+.dashboard-table, .dashboard-table-mobile {
   border: 4px solid black;
   border-radius: 4px;
   margin-bottom: 8rem;
 }
 
+.dashboard-table-mobile {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  display: none;
+}
+
 .dashboard-table th,
-.dashboard-table td {
+.dashboard-table td,
+.dashboard-table-mobile th,
+.dashboard-table-mobile td {
   border: 2px solid grey;
   width: 420px;
 }
 
-.dashboard-table th {
+.dashboard-table th,
+.dashboard-table-mobile th {
   text-align: center;
 }
 
-.dashboard-table td {
+.dashboard-table td,
+.dashboard-table-mobile td {
   vertical-align: text-top;
   padding-top: 0.5rem;
 }
 
-.dashboard-table .dashboard-list {
+.dashboard-table .dashboard-list,
+.dashboard-table-mobile .dashboard-list {
   list-style-type: none;
 }
 
 .dashboard-table .dashboard-list a:link,
 .dashboard-table .dashboard-list a:visited,
-.dashboard-table .dashboard-list a:active {
+.dashboard-table .dashboard-list a:active,
+.dashboard-table-mobile .dashboard-list a:link,
+.dashboard-table-mobile .dashboard-list a:visited,
+.dashboard-table-mobile .dashboard-list a:active {
   text-decoration: underline;
 }
 
-.dashboard-table .dashboard-list a:hover {
+.dashboard-table .dashboard-list a:hover,
+.dashboard-table-mobile .dashboard-list a:hover {
   text-decoration: none;
 }
 
@@ -902,6 +918,31 @@ header div {
   }
   .dashboard-info div {
     margin-bottom: 1rem;
+  }
+  .dashboard-table-mobile {
+    display: block;
+  }
+  .dashboard-table {
+    display: none;
+  }
+  .snip-table {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #d-1, #d-2, #d-3, #d-4, #d-5, #d-6, #d-7, #d-8, #d-9, #d-10, #d-11, #d-12, #d-13, #d-14, #d-15, #d-16, #d-17, #d-18, #d-19, #d-20, #d-21, #d-22, #d-23, #d-24, #d-25{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .snip-example {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dashboard .nav-tabs {
+    width: 400px;
+    margin-left: -4.5rem;
   }
 }
 /***************** footer *****************/
