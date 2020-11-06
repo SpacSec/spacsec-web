@@ -1,13 +1,13 @@
 <%- include("./includes/navbar") -%>
 
-<header class="tracks-header">
+<header class="load-hidden tracks-header">
   <h1>Tracks</h1>
   <p>
     1st International Conference on Cyber Warfare, Security & Space Research
   </p>
 </header>
 
-<div class="tracks">
+<section class="tracks">
   <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
       <a
@@ -37,7 +37,7 @@
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
-    <div
+    <section
       class="container tab-pane fade show active"
       id="cyber-warfare"
       role="tabpanel"
@@ -71,8 +71,8 @@
           • State-Sponsored Cyber Attack <br />
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       class="container tab-pane fade"
       id="security"
       role="tabpanel"
@@ -107,8 +107,8 @@
           • Software and Systems Security <br />
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       class="container tab-pane fade"
       id="space-research"
       role="tabpanel"
@@ -156,7 +156,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
-</div>
+</section>
 <%- include("./includes/footer") -%>

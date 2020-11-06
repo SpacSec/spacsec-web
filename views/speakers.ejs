@@ -1,10 +1,12 @@
 <%- include("./includes/navbar") -%>
-<header class="speakers-header">
+<header class="load-hidden speakers-header">
   <h1>Speakers</h1>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum,
     nobis laudantium, voluptatum iure voluptatibus ea
   </p>
 </header>
-<div><%- include("./components/speaker-list.ejs") -%></div>
+<section class="speaker-page">
+  <%- include("./components/speaker-list.ejs") -%>
+</section>
 <%- include("./includes/footer") -%>

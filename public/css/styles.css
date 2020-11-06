@@ -2,12 +2,13 @@
 :root {
   --primary-blue: #316bff;
   --primary-black: #1a2447;
-  --secondary-gray: #fafbff;
+  --secondary-gray: #f8faff;
   --secondary-blue: #1a4ccc;
   --neutral-gray1: #e6e7f3;
   --neutral-gray2: #3d3e53;
   --gray1: #e6e7f3;
-  --shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  --shadow: 0 8px 16px 0 rgba(17, 10, 99, 0.04),
+    0 12px 22px 0 rgba(128, 118, 247, 0.04);
   --shadow-blue: 0px 0px 10px rgba(49, 107, 255, 0.2);
   --shadow-blue-hover: 0px 0px 40px rgba(49, 107, 255, 0.5);
   --primary-gradient: linear-gradient(
@@ -19,6 +20,9 @@
 }
 .container {
   overflow: hidden;
+}
+.load-hidden {
+  visibility: hidden;
 }
 .btn {
   font-weight: 600;
@@ -79,6 +83,7 @@ h5 {
   padding: 1rem;
 }
 section {
+  visibility: hidden;
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -303,7 +308,9 @@ header div {
   background-color: var(--secondary-gray);
   /* background-color: var(--primary-black); */
 }
-
+.home-about {
+  visibility: hidden;
+}
 .home-about p {
   color: var(--primary-black);
 }
@@ -356,11 +363,20 @@ header div {
 /* tabs */
 
 .tracks {
+  /* background: var(--secondary-gray); */
+  visibility: hidden;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 4rem;
+}
+.tracks section {
+  padding-top: 1rem;
+}
+.tracks section h3::after {
+  display: none;
 }
 .nav-tabs .nav-item,
 .nav-tabs {
@@ -369,9 +385,11 @@ header div {
 }
 .nav-tabs .active {
   font-weight: bold;
-  background-color: "white";
 }
-
+/* .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background: var(--secondary-gray);
+} */
 .nav-tabs .active::after {
   position: absolute;
   bottom: 0;
@@ -410,7 +428,9 @@ header div {
 }
 
 /**************** speakers ****************/
-
+.speaker-page {
+  background: var(--secondary-gray);
+}
 .speakers {
   display: flex;
   flex-direction: column;
@@ -426,12 +446,22 @@ header div {
   justify-content: center;
   align-items: center;
 }
+.card {
+  visibility: hidden;
+  border: none;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+}
 .speaker-card {
   margin: 2rem;
 }
 
 .card-body {
   border-radius: 8px;
+  border: none;
 }
 
 @media (max-width: 992px) {
@@ -454,6 +484,7 @@ header div {
 
 .timeline .timeline-row {
   display: flex;
+  visibility: hidden;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -480,6 +511,7 @@ header div {
 }
 
 .timeline .timeline-row .roadmap-point {
+  /* visibility: hidden; */
   background: white;
   height: 15px;
   width: 15px;
@@ -489,6 +521,8 @@ header div {
 }
 
 .roadmap-path {
+  visibility: hidden;
+
   background: var(--primary-gradient);
   height: 780px;
   width: 4px;
@@ -588,6 +622,7 @@ header div {
   text-align: center;
   padding: 1rem;
   width: 370px;
+  visibility: hidden;
 }
 
 .core-committee .core-committee-row .member .member-name {
@@ -623,6 +658,7 @@ header div {
 .technical-committee .technical-committee-row .member {
   text-align: center;
   /*  */
+  visibility: hidden;
   /* color: #3d3e53; */
   margin-left: 2rem;
   margin-right: 2rem;
@@ -653,7 +689,7 @@ header div {
 
 .advisory-committee .advisory-committee-row .member {
   text-align: center;
-
+  visibility: hidden;
   margin-left: 2rem;
   margin-right: 2rem;
   width: 300px;
