@@ -1,19 +1,19 @@
 
 const revealCards = {
     easing: 'ease-in',
-    delay: 375,
+    delay: 100,
     reset: false,
     interval: 100
 }
 const reveal = {
     easing: 'ease-in',
-    delay: 375,
+    delay: 0,
     reset: false,
     interval: 200
 }
 var slideUp = {
     distance: '5%',
-    delay: 375,
+    delay: 0,
     duration: 500,
     origin: 'top',
     // opacity: 0,
