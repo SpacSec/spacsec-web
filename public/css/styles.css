@@ -348,6 +348,17 @@ header div {
 .contact-details {
   margin-bottom: 2rem;
 }
+.read-more-btn {
+  color: #316bff;
+  background-color: #fff;
+  border: none;
+}
+.read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 992px) {
   .home-header button {
     margin-bottom: 1rem;
