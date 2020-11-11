@@ -18,8 +18,8 @@
       </div>
     </div>
     <div class="my-3">
-      <button class="mx-2 p-2 btn btn-primary">Register as an Attendee</button>
-      <button class="mx-2 p-2 btn btn-outline-primary">Register as a Presenter</button>
+      <a href="register" class="mx-2 p-2 btn btn-primary">Register as an Attendee</a>
+      <a href="register" class="mx-2 p-2 btn btn-outline-primary">Register as a Presenter</a>
     </div>
   </div>
 </header>
@@ -56,7 +56,7 @@
     combat information warfare and all aspects of Space technology and research
     to come together and exchange ideas.
   </p>
-  <div class="collapse" id="collapseExample">
+  <div class="d-xs-none d-sm-none d-md-block collapse" collapse" id="collapseExample">
     <p>
       There are several strong strands of research developing in the cyber
       warfare, cybersecurity, and space research area including the understanding
@@ -81,9 +81,10 @@
       fields and synchronizing with the product market.
     </p>
   </div>
-  <div class="read-more">
-    <input class="btn btn-primary read-more-btn" id="read-more-btn" onclick="change()" value="Read More" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    </input>
+  <div class="visible-md read-more">
+    <a class="read-more-btn" id="read-more-btn" onclick="change()" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    READ MORE
+    </a>
   </div>
 </section>
 

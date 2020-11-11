@@ -310,7 +310,7 @@ header div {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   background-color: var(--secondary-gray);
   /* background-color: var(--primary-black); */
 }
@@ -348,10 +348,13 @@ header div {
 .contact-details {
   margin-bottom: 2rem;
 }
-.read-more-btn {
-  color: #316bff;
-  background-color: #fff;
-  border: none;
+.read-more a {
+  color: var(--primary-blue) !important;
+  font-weight: 600;
+  display: none;
+  /* box-shadow: none; */
+  /* background-color: #fff; */
+  /* border: none; */
 }
 .read-more {
   display: flex;
@@ -360,9 +363,13 @@ header div {
 }
 
 @media (max-width: 992px) {
-  .home-header button {
+  .home-header a {
     margin-bottom: 1rem;
   }
+  .read-more a {
+    display: block;
+  }
+
   .contact-form {
     align-items: center;
     flex-direction: column;
@@ -1098,6 +1105,9 @@ footer h5 {
 }
 /**************** quaries ****************/
 @media (max-width: 576px) {
+  .home-header {
+    height: 80vh;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1110,6 +1120,9 @@ footer h5 {
     margin-right: 3rem;
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  section h3::after {
+    display: none;
   }
 }
 
