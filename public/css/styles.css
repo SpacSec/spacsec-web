@@ -736,6 +736,7 @@ header div {
 .sponsors .sponsor-row .sponsor .sponsor-name {
   font-weight: 600;
   margin-top: 1rem;
+  font-weight: bolder;
 }
 
 .sponsors .sponsor-row .sponsor .sponsor-img-1 {
