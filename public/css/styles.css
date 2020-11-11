@@ -530,7 +530,7 @@ header div {
   visibility: hidden;
 
   background: var(--primary-gradient);
-  height: 780px;
+  height: 920px;
   width: 4px;
   position: absolute;
   transform: translate(228px, 80px);
