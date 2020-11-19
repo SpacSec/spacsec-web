@@ -488,6 +488,10 @@ header div {
   border: none;
 }
 
+.speaker-linkedin {
+  font-size: 40px
+}
+
 @media (max-width: 992px) {
   .speakers-row {
     flex-direction: column;
