@@ -456,8 +456,8 @@ header div {
   background: var(--secondary-gray);
 }
 .speakers {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .speakers h5 {
@@ -465,10 +465,8 @@ header div {
 }
 
 .speakers-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .card {
   visibility: hidden;
