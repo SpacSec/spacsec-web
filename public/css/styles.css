@@ -396,6 +396,7 @@ header div {
   align-items: center;
   justify-content: center;
   padding-bottom: 4rem;
+  margin-top: 2rem;
 }
 .tracks-header {
   background-image: url(../images/home-head-alt-3.jpg);
@@ -803,6 +804,7 @@ header div {
   align-items: center;
   justify-content: center;
   padding-bottom: 4rem;
+  margin-top: 2.5rem;
 }
 .dashboard-header {
   background-image: url(../images/home-head-alt-3.jpg);
