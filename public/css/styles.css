@@ -2,7 +2,7 @@
 :root {
   --primary-blue: #316bff;
   --primary-black: #1a2447;
-  --secondary-gray: #f8faff;
+  --secondary-gray: #999da0;
   --secondary-blue: #1a4ccc;
   --neutral-gray1: #e6e7f3;
   --neutral-gray2: #3d3e53;
@@ -493,12 +493,16 @@ header div {
 }
 
 .speaker-linkedin {
-  font-size: 40px
+  font-size: 32px;
 }
 
 @media (max-width: 992px) {
   .speakers-row {
     grid-template-columns: auto;
+  }
+  .speaker-card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1048,11 +1052,11 @@ header div {
 }
 
 .credits-card {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .credits-social-handle {
-  font-size: 40px;
+  font-size: 32px;
   margin-left: 15px;
   margin-right: 15px;
 }
