@@ -282,6 +282,7 @@ header div {
 .home-header {
   min-height: 60vh;
   position: relative;
+  background-image: url(../images/home-head-alt-3.jpg);
 }
 .details {
   color: var(--neutral-gray2);
@@ -396,6 +397,9 @@ header div {
   justify-content: center;
   padding-bottom: 4rem;
 }
+.tracks-header {
+  background-image: url(../images/home-head-alt-3.jpg);
+}
 .tracks section {
   padding-top: 1rem;
 }
@@ -459,7 +463,9 @@ header div {
   justify-content: center;
   align-items: center;
 }
-
+.speakers-header {
+  background-image: url(../images/home-head-alt-3.jpg);
+}
 .speakers h5 {
   margin-left: 0;
 }
@@ -507,7 +513,9 @@ header div {
   flex-direction: column;
   margin-top: 40px;
 }
-
+.schedules-header {
+  background-image: url(../images/home-head-alt-3.jpg);
+}
 .timeline .timeline-row {
   display: flex;
   visibility: hidden;
@@ -625,6 +633,9 @@ header div {
 /* .committee section h3::after {
   top: 60%;
 } */
+.committee-header {
+  background-image: url(../images/home-head-alt-3.jpg);
+}
 .core-committee {
   background: var(--secondary-gray);
   align-items: center;
@@ -788,6 +799,9 @@ header div {
   align-items: center;
   justify-content: center;
   padding-bottom: 4rem;
+}
+.dashboard-header {
+  background-image: url(../images/home-head-alt-3.jpg);
 }
 .nav-tabs .nav-item,
 .nav-tabs {
@@ -1019,7 +1033,9 @@ header div {
   justify-content: center;
   align-items: center;
 }
-
+.credits-header {
+  background-image: url(../images/home-head-alt-3.jpg);
+}
 .credits-row {
   display: flex;
   flex-direction: row;
@@ -1096,6 +1112,10 @@ footer h5 {
   .footer-content div {
     margin-top: 1rem;
   }
+}
+/**************** contact us ****************/
+.contact-header {
+  background-image: url(../images/home-head-alt-3.jpg);
 }
 /**************** auth form ****************/
 .auth-header {
