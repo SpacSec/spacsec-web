@@ -558,7 +558,7 @@ header div {
 
 .timeline .timeline-row .event {
   width: 750px;
-  height: 100px;
+  height: 65px;
   margin-left: 50px;
   margin-bottom: 30px;
   color: #3d3e53;
@@ -604,7 +604,7 @@ header div {
     margin-bottom: 2rem;
     background: var(--secondary-gray);
     box-shadow: none;
-    /* margin-top: -50px;
+    margin-top: -0.9375px;/*
     margin-right: 325px; */
   }
 
