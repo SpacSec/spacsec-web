@@ -1,20 +1,27 @@
 <%- include("./includes/navbar") -%>
-<header class="home-header load-hidden">
-    <div id="carouselExampleControls" class="carousel slide slider" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-interval=10000000 data-keyboard=false>
-          <div class="slide-1">
-            <h1>SpacSec '21</h1>
+<header class="home-header">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol> -->
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" >
+        <div class="carousel-image" style="background-image: url('https://source.unsplash.com/CpHNKNRwXps/1920x1080')"></div>
+        <div class="carousel-caption ">
+          <h1>SpacSec '21</h1>
             <div class="center">
-              <p style="font-size: 1.20rem;">
+              <p class="home-subtext" style="font-size: 1.20rem;">
                 1<sup>st</sup> International Conference on Cyber Warfare, Security & Space Research
               </p>
               <div class="details d-flex text-center my-3" style="font-size: 1.10rem;">
-                <div class="mx-3">
+                <div class="home-subtext mx-4">
                   <b> Date <br /> </b>
                   9<sup>th</sup> & 10<sup>th</sup> December 2021
                 </div>
-                <div class="mx-3">
+                <div class="home-subtext mx-4">
                   <b> Venue <br /> </b>
                   Manipal University Jaipur
                 </div>
@@ -24,57 +31,41 @@
               <a href="register" class="mx-2 p-2 btn btn-primary">Register as an Attendee</a>
               <a href="register" class="mx-2 p-2 btn btn-outline-primary">Register as a Presenter</a>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item" data-interval=10000000 data-keyboard=false>
-          <div class="slide-2">
-            <p class="slide-content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur debitis illo dignissimos
-              a. Debitis, facere esse quae quas rem reprehenderit quam, ex sapiente tempora laudantium consequatur 
-              dolores optio sunt officia.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex provident veritatis error dolor fugit aut 
-              alias reprehenderit saepe optio. Magnam, enim. Porro recusandae dolore soluta quis necessitatibus 
-              sapiente quas pariatur.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias, officia necessitatibus tenetur 
-              quos recusandae! Placeat exercitationem, distinctio eos odit fuga, nobis fugit consequuntur nostrum 
-              nemo quisquam odio eligendi rem?
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item" data-interval=10000000 data-keyboard=false>
-          <div class="slide-3">
-            <p class="slide-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur debitis illo dignissimos
-              a. Debitis, facere esse quae quas rem reprehenderit quam, ex sapiente tempora laudantium consequatur 
-              dolores optio sunt officia.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex provident veritatis error dolor fugit aut 
-              alias reprehenderit saepe optio. Magnam, enim. Porro recusandae dolore soluta quis necessitatibus 
-              sapiente quas pariatur.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste alias, officia necessitatibus tenetur 
-              quos recusandae! Placeat exercitationem, distinctio eos odit fuga, nobis fugit consequuntur nostrum 
-              nemo quisquam odio eligendi rem?
-            </p>
-          </div>
         </div>
       </div>
-      <a class="carousel-control-prev slider-controls" href="#carouselExampleControls" role="button" data-slide="prev">
-        <i class="fas fa-angle-left slider-prev"></i>
-      </a>
-      <a class="carousel-control-next slider-controls" href="#carouselExampleControls" role="button" data-slide="next">
-        <i class="fas fa-angle-right slider-next"></i>
-      </a>
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+        <div class="carousel-caption">
+          <h1>2</h1>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+        <div class="carousel-caption">
+          <h1>3</h1>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+
+      
 </header>
 
 <!-- sponsor -->
 <section class="home-sponsors">
   <div class="sponsors">
     <div class="sponsor-row">
-      <div class="sponsor">
+      <!-- <div class="sponsor">
         <p class="sponsor-description">Technical Sponsor</p>
         <p class="sponsor-name">-><-</p>
         <a class="sponsor-link" href="#" target="_blank"><img class="sponsor-img-1" src="#" alt="..."></a>
-      </div>
+      </div> -->
       <div class="sponsor">
         <p class="sponsor-description">Financial Sponsor</p>
         <p class="sponsor-name">Manipal University Jaipur</p>
