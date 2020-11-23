@@ -238,6 +238,7 @@ header {
 
 header h1 {
   /* color: var(--primary-black); */
+  /*
   background: rgb(49, 210, 255);
   background: -moz-linear-gradient(
     210deg,
@@ -255,6 +256,8 @@ header h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  */
+  color: #fff;
   margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 800;
