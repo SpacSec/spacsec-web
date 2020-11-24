@@ -9,62 +9,40 @@
         />
         <div class="card-body">
           <h5 class="card-title">Prof. Ajay Gupta</h5>
-          <p class="card-text">Western Michigan University<br>Kalamazoo<br>MI</p><!--
-          <button onclick="document.getElementById('s1').style.display='block'" class="btn btn-primary modal-btn">Know More</button>
-          <div id="s1" class="w3-modal">
-            <div class="w3-modal-content w3-animate-zoom w3-card-4">
-              <div class="w3-container modal-header"> 
-                <span onclick="document.getElementById('s1').style.display='none'" 
-                class="w3-button w3-display-topright">&times;</span>
-                <h2><b>Prof. Ajay Gupta</b></h2>
-              </div>
-              <div class="w3-container modal-body">
-                <p>Ajay Gupta is a Professor of Computer Science at Western Michigan University.
-                   He is quite active in IEEE-Computer Society being the Vice-Chair of the Technical
-                   Activities Committees in 2015-2016 and elected twice as the Chair of the Technical 
-                   committee on Parallel Processing from 2011 to 2015.<br><br>From 1998 to 2002, he was
-                   the Chairman of the Computer Science Department at Western Michigan University. 
-                   Dr. Gupta received his Ph.D. in Computer Science from Purdue University in 1989, 
-                   his M.S. in Mathematics and Statistics from the University of Cincinnati in 1984, 
-                   and his B.E. (Honors) in Electrical and Electronics Engineering from Birla Institute 
-                   of Technology and Sciences, Pilani, India in 1982.<br>
-                   <a href="#" class="speaker-linkedin" target="_blank" role="button"><i class="fab fa-linkedin"></i></a>
-                </p>
-              </div>
-              <div class="w3-container modal-footer">
-                <p></p>
-              </div>
-            </div>
-          </div>    -->
-
-
-
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-            Launch static backdrop modal
-          </button>
-
-          <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <p class="card-text">Western Michigan University<br>Kalamazoo<br>MI</p>
+          <div class="know-more">
+            <a class="know-more-btn" id="know-more-btn" type="button" data-toggle="modal" data-target="#s1" aria-expanded="false" aria-controls="s1">
+              READ MORE
+            </a>
+          </div>
+          <div class="modal fade" id="s1" data-backdrop="static" data-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                  <h4 class="modal-title" id="staticBackdropLabel1">Prof. Ajay Gupta</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <p>
+                    Ajay Gupta is a Professor of Computer Science at Western Michigan University. 
+                    He is quite active in IEEE-Computer Society being the Vice-Chair of the Technical 
+                    Activities Committees in 2015-2016 and elected twice as the Chair of the Technical 
+                    committee on Parallel Processing from 2011 to 2015.<br><br>From 1998 to 2002, he 
+                    was the Chairman of the Computer Science Department at Western Michigan University. 
+                    Dr. Gupta received his Ph.D. in Computer Science from Purdue University in 1989, his 
+                    M.S. in Mathematics and Statistics from the University of Cincinnati in 1984, and his 
+                    B.E. (Honors) in Electrical and Electronics Engineering from Birla Institute of 
+                    Technology and Sciences, Pilani, India in 1982.<br>
+                    <a href="#" class="speaker-linkedin" target="_blank" role="button"><i class="fab fa-linkedin"></i></a>
+                  </p>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Understood</button>
                 </div>
               </div>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </div>

@@ -121,115 +121,50 @@
   </div>
 </section>
 
+
 <section class="home-speakers">
   <h3>Speakers</h3>
   <div class="speakers container">
     <div class="speakers-row">
-      <div class="speaker-card">
-        <div class="card" style="width: 20rem"> 
-          <img
-              src="/images/speaker-1.jpg"
-              class="card-img-top"
-              alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Prof. Ajay Gupta</h5>
-            <p class="card-text">Western Michigan University<br>Kalamazoo<br>MI</p>
-            <button onclick="document.getElementById('s1').style.display='block'" class="btn btn-primary modal-btn">Know More</button>
-            <div id="s1" class="w3-modal">
-              <div class="w3-modal-content w3-animate-zoom w3-card-4">
-                <div class="w3-container modal-header"> 
-                  <span onclick="document.getElementById('s1').style.display='none'" 
-                  class="w3-button w3-display-topright">&times;</span>
-                  <h2><b>Prof. Ajay Gupta</b></h2>
+    <div class="speaker-card">
+      <div class="card" style="width: 20rem"> 
+        <img
+            src="/images/speaker-1.jpg"
+            class="card-img-top"
+            alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Prof. Ajay Gupta</h5>
+          <p class="card-text">Western Michigan University<br>Kalamazoo<br>MI</p>
+          <div class="know-more">
+            <a class="know-more-btn" id="know-more-btn" type="button" data-toggle="modal" data-target="#s1" aria-expanded="false" aria-controls="s1">
+              READ MORE
+            </a>
+          </div>
+          <div class="modal fade" id="s1" data-backdrop="static" data-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="staticBackdropLabel1">Prof. Ajay Gupta</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-                <div class="w3-container modal-body">
-                  <p>Ajay Gupta is a Professor of Computer Science at Western Michigan University.
-                    He is quite active in IEEE-Computer Society being the Vice-Chair of the Technical
+                <div class="modal-body">
+                  <p>
+                    Ajay Gupta is a Professor of Computer Science at Western Michigan University. 
+                    He is quite active in IEEE-Computer Society being the Vice-Chair of the Technical 
                     Activities Committees in 2015-2016 and elected twice as the Chair of the Technical 
-                    committee on Parallel Processing from 2011 to 2015.<br><br>From 1998 to 2002, he was
-                    the Chairman of the Computer Science Department at Western Michigan University. 
-                    Dr. Gupta received his Ph.D. in Computer Science from Purdue University in 1989, 
-                    his M.S. in Mathematics and Statistics from the University of Cincinnati in 1984, 
-                    and his B.E. (Honors) in Electrical and Electronics Engineering from Birla Institute 
-                    of Technology and Sciences, Pilani, India in 1982.<br>
+                    committee on Parallel Processing from 2011 to 2015.<br><br>From 1998 to 2002, he 
+                    was the Chairman of the Computer Science Department at Western Michigan University. 
+                    Dr. Gupta received his Ph.D. in Computer Science from Purdue University in 1989, his 
+                    M.S. in Mathematics and Statistics from the University of Cincinnati in 1984, and his 
+                    B.E. (Honors) in Electrical and Electronics Engineering from Birla Institute of 
+                    Technology and Sciences, Pilani, India in 1982.<br>
                     <a href="#" class="speaker-linkedin" target="_blank" role="button"><i class="fab fa-linkedin"></i></a>
                   </p>
                 </div>
-                <div class="w3-container modal-footer">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="speaker-card">
-        <div class="card" style="width: 20rem">
-          <img
-              src="/images/speaker-2.png"
-              class="card-img-top"
-              alt="..."
-          />
-            <div class="card-body">
-            <h5 class="card-title">Dr. Pljonkin A. Pavlovich</h5>
-            <p class="card-text">Ministry of Education and Science of the Russian Federation<br>Southern Federal University</p>
-            <button onclick="document.getElementById('s2').style.display='block'" class="btn btn-primary modal-btn">Know More</button>
-            <div id="s2" class="w3-modal">
-              <div class="w3-modal-content w3-animate-zoom w3-card-4">
-                <div class="w3-container modal-header"> 
-                  <span onclick="document.getElementById('s2').style.display='none'" 
-                  class="w3-button w3-display-topright">&times;</span>
-                  <h2><b>Dr. Pljonkin A. Pavlovich</b></h2>
-                </div>
-                <div class="w3-container modal-body">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias libero maiores itaque
-                    corrupti. Soluta voluptatum fugiat iure quasi velit atque sunt eaque quam nulla quidem
-                    dolor, commodi, dolorum nostrum dolore?Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    elit. Repellat, sint odit? Ea quibusdam architecto iste asperiores est ratione ad nostrum 
-                    culpa quam ut magnam molestias, unde reprehenderit debitis qui? Quidem.<br>
-                    <a href="#" class="speaker-linkedin" target="_blank" role="button"><i class="fab fa-linkedin"></i></a>
-                  </p>
-                </div>
-                <div class="w3-container modal-footer">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="speaker-card">
-        <div class="card" style="width: 20rem">
-          <img
-              src="/images/speaker-3.png"
-              class="card-img-top"
-              alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Anshuman Kalla</h5>
-            <p class="card-text">Postdoctoral Visiting Researcher<br>CWC<br>University of Oulu, Finland</p>
-            <button onclick="document.getElementById('s3').style.display='block'" class="btn btn-primary modal-btn">Know More</button>
-            <div id="s3" class="w3-modal">
-              <div class="w3-modal-content w3-animate-zoom w3-card-4">
-                <div class="w3-container modal-header"> 
-                  <span onclick="document.getElementById('s3').style.display='none'" 
-                  class="w3-button w3-display-topright">&times;</span>
-                  <h2><b>Anshuman Kalla</b></h2>
-                </div>
-                <div class="w3-container modal-body">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias libero maiores itaque
-                    corrupti. Soluta voluptatum fugiat iure quasi velit atque sunt eaque quam nulla quidem
-                    dolor, commodi, dolorum nostrum dolore?Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    elit. Repellat, sint odit? Ea quibusdam architecto iste asperiores est ratione ad nostrum 
-                    culpa quam ut magnam molestias, unde reprehenderit debitis qui? Quidem.<br>
-                    <a href="#" class="speaker-linkedin" target="_blank" role="button"><i class="fab fa-linkedin"></i></a>
-                  </p>
-                </div>
-                <div class="w3-container modal-footer">
-                  <p></p>
+                <div class="modal-footer">
                 </div>
               </div>
             </div>
@@ -237,11 +172,39 @@
         </div>
       </div>
     </div>
+    <div class="speaker-card">
+      <div class="card" style="width: 20rem">
+        <img
+            src="/images/speaker-2.png"
+            class="card-img-top"
+            alt="..."
+        />
+        <div class="card-body">
+        <h5 class="card-title">Dr. Pljonkin A. Pavlovich</h5>
+        <p class="card-text">Ministry of Education and Science of the Russian Federation<br>Southern Federal University</p>
+        </div>
+      </div>
+    </div>
+    <div class="speaker-card">
+      <div class="card" style="width: 20rem">
+        <img
+            src="/images/speaker-3.png"
+            class="card-img-top"
+            alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Anshuman Kalla</h5>
+          <p class="card-text">Postdoctoral Visiting Researcher<br>CWC<br>University of Oulu, Finland</p>    
+        </div>
+      </div>
+    </div>
+  </div> 
     <div class="speaker-redirect">
-      <a class="btn btn-outline-primary" href="speakers" role="button">See all Speakers</a>
+      <a class="btn btn-lg btn-outline-primary" href="speakers" role="button">See all Speakers</a>
     </div>
   </div>
 </section>
+
 
 <section class="home-form">
   <div class="container">
