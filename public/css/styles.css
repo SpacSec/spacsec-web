@@ -27,8 +27,8 @@
 .btn {
   font-weight: 600;
   text-transform: uppercase;
-  border: 2px solid;
-  border-color: var(--primary-blue);
+  /* border: 2px solid; */
+  /* border-color: var(--primary-blue); */
   min-width: 150px;
   padding: 0.5rem;
 }
@@ -428,7 +428,6 @@ header div {
   text-align: center;
 }
 .home-speakers a {
-  margin-bottom: 1rem;
   border: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -684,17 +683,20 @@ header div {
 }
 
 .timeline .timeline-row .date {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   margin-right: 50px;
   text-align: center;
   margin-bottom: 30px;
   color: #3d3e53;
-  padding-top: 15px;
+  padding-top: 20px;
   /* box-shadow: 0px 0px 20px rgba(0, 4, 255, 0.5); */
   box-shadow: var(--shadow);
 }
-
+.event-description {
+  /* font-size: 15px; */
+  color: var(--neutral-gray2);
+}
 .timeline .timeline-row .roadmap-point {
   /* visibility: hidden; */
   background: white;
@@ -709,15 +711,15 @@ header div {
   visibility: hidden;
 
   background: var(--primary-gradient);
-  height: 920px;
+  height: 980px;
   width: 4px;
   position: absolute;
-  transform: translate(228px, 80px);
+  transform: translate(233px, 88px);
 }
 
 .timeline .timeline-row .event {
   width: 750px;
-  height: 100px;
+  height: 110px;
   margin-left: 50px;
   margin-bottom: 30px;
   color: #3d3e53;
