@@ -34,6 +34,7 @@ var messageSchema = new mongoose.Schema({
     required: true,
   },
 });
+messageSchema.set("timestamps", true);
 var userSchema = new mongoose.Schema({
   username: {
     type: String,

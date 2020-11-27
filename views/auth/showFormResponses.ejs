@@ -1,25 +1,40 @@
 <%- include("../includes/navbar") -%>
 <header>
+  <div
+    class="header-image"
+    style="
+      background-image: url('https://source.unsplash.com/oxgK2f_rxDc/1920x1080');
+    "
+  ></div>
   <h1>Contact Form Responses</h1>
   <p>View all the responses received from the contact from.</p>
 </header>
-<section class="container form-responses-container">
+<section class="container">
   <p class="count"><%= responses.length %> responses found</p>
-  <% responses.map((item)=>{ %>
-  <!-- <p>Name - <%= item %></p> -->
-  <div class="response-card">
-    <p>Name - <%= item.name %></p>
-    <p>
-      Email -
-      <a
-        rel="noopner noreferer"
-        target="_BLANK"
-        href="mailto:s<%= item.email %>"
-        ><%= item.email %></a
-      >
-    </p>
-    <p>Message - <%= item.message %></p>
+  <div class="form-responses-container">
+    <% responses.reverse().map((item)=>{ %>
+    <!-- <p>Name - <%= item %></p> -->
+    <div class="response-card">
+      <p><b>Name</b> - <%= item.name %></p>
+      <% let date = new Date(item.createdAt).toLocaleString(undefined,
+      {timeZone: 'Asia/Kolkata'}); %>
+      <p class="form-datetime"><%= date %></p>
+      <p>
+        <b>Email</b> -
+        <a
+          rel="noopner noreferer"
+          target="_BLANK"
+          href="mailto:s<%= item.email %>"
+          ><%= item.email %></a
+        >
+      </p>
+      <p></p>
+      <p class="my-1">
+        <b>Message</b>
+      </p>
+      <%= item.message %>
+    </div>
+    <% }) %>
   </div>
-  <% }) %>
 </section>
 <%- include("../includes/footer") -%>
