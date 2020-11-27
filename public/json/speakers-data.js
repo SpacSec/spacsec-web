@@ -26,7 +26,7 @@ const speakers = [
   {
     name: "Dr. Pljonkin A. Pavlovich",
     image: "/images/speaker-2.png",
-    institute: "Ministry of Education and Science of the Russian Federation",
+    institute: "Ministry of Education and Science of the Russian Federation ",
     location: "Southern Federal University",
     country: "",
     details: `
