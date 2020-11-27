@@ -65,5 +65,71 @@ const speakers = [
     `,
     linkedin: "#",
   },
+  {
+    name: "Dr. Geeta Sikka",
+    image: "/images/dummy.jpg",
+    institute: "National Institute Of Technology",
+    location: "Jalandhar",
+    country: "India",
+    details: `
+  
+    `,
+    linkedin: "#",
+  },
+  {
+    name: "Dr. PK Garg",
+    image: "/images/dummy.jpg",
+    institute: "India Institute Of Technology",
+    location: "Roorkee",
+    country: "India",
+    details: `
+  
+    `,
+    linkedin: "#",
+  },
+  {
+    name: "Arvind Sharma",
+    image: "/images/dummy.jpg",
+    institute: "Hindustan Aeronautics Limited",
+    location: "Nasik",
+    country: "India",
+    details: `
+  
+    `,
+    linkedin: "#",
+  },
+  {
+    name: "Dr. B.B. Gupta",
+    image: "/images/dummy.jpg",
+    institute: "National Institute Of Technology",
+    location: "Kurukshetra",
+    country: "India",
+    details: `
+  
+    `,
+    linkedin: "#",
+  },
+  {
+    name: "Cem Avsar",
+    image: "/images/dummy.jpg",
+    institute: "TU Berlin",
+    location: "Managing Director bei beSpace GmbH and Scientific Coordinator",
+    country: "",
+    details: `
+  
+    `,
+    linkedin: "#",
+  },
+  {
+    name: "Dr. Vidhyacharan Bhaskar",
+    image: "/images/dummy.jpg",
+    institute: "San Francisco State University",
+    location: "California",
+    country: "USA",
+    details: `
+  
+    `,
+    linkedin: "#",
+  },
 ];
 module.exports = speakers;
