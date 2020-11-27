@@ -376,6 +376,11 @@ header div {
 .home-speakers h3 {
   text-align: center;
 }
+.home-speakers a {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 .contact-form {
   display: flex;
 }
@@ -532,7 +537,7 @@ header div {
   margin-left: 0;
 }
 
-.speakers-row {
+.speakers-grid {
   display: grid;
   grid-template-columns: auto auto auto;
 }
@@ -550,6 +555,7 @@ header div {
 }
 .speaker-card {
   margin: 2rem;
+  min-height: 510px;
 }
 
 .card-body {
@@ -558,7 +564,10 @@ header div {
 }
 
 .speaker-linkedin {
-  font-size: 40px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  display: block;
+  font-size: 32px;
 }
 
 .speaker-redirect {
@@ -569,9 +578,8 @@ header div {
   margin-top: 3rem;
 }
 
-
 @media (max-width: 992px) {
-  .speakers-row {
+  .speakers-grid {
     grid-template-columns: auto;
   }
   .speaker-card {
@@ -591,7 +599,6 @@ header div {
   padding: 1rem 1rem 0rem 1rem;
   text-align: justify;
 }
-
 
 /***************** schedule *****************/
 .schedule {
