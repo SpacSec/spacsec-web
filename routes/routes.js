@@ -1,11 +1,15 @@
 const express = require("express");
 const router = express.Router();
-
+const speakersData = require("../public/json/speakers-data");
 //nav endpoints
 router.get("/", (req, res) => {
   const success = "false";
   const page_name = "home";
-  res.render("index", { page_name: page_name, success: success });
+  res.render("index", {
+    page_name: page_name,
+    success: success,
+    speakersData: speakersData,
+  });
 });
 router.get("/tracks", (req, res) => {
   const page_name = "tracks";
@@ -13,7 +17,7 @@ router.get("/tracks", (req, res) => {
 });
 router.get("/speakers", (req, res) => {
   const page_name = "speakers";
-  res.render("speakers", { page_name: page_name });
+  res.render("speakers", { page_name: page_name, speakersData: speakersData });
 });
 router.get("/schedule", (req, res) => {
   const page_name = "schedule";

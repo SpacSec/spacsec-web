@@ -125,8 +125,73 @@
 <section class="home-speakers">
   <h3>Speakers</h3>
   <div class="speakers container">
-    <div class="speakers-row">
+    <div class="speakers-grid">
+      <% let homeSpeakers = speakersData.slice(0, 3); %>
+      <% homeSpeakers.map((item)=>{ %>
     <div class="speaker-card">
+      <div class="card" style="width: 20rem">
+        <img src= <%=item.image %> id="speaker-img" class="card-img-top"
+        alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"><%= item.name %></h5>
+          <p class="card-text">
+            <%= item.institute %><br /><%= item.location %><br /><%=
+            item.country %>
+          </p>
+          <div class="know-more">
+            <a
+              class="know-more-btn "
+              id="know-more-btn"
+              type="button"
+              data-toggle="modal" data-target="#s1" aria-expanded="false"
+              aria-controls="s1" > READ MORE
+            </a>
+          </div>
+          <div
+            class="modal fade"
+            id="s1"
+            data-backdrop="static"
+            data-keyboard="true"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel1"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="staticBackdropLabel1">name</h4>
+                  <button
+                    type="button"
+                    class="close"
+                    id="speaker-close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p id="modelContent">
+                  </p>
+                    <a
+                      href=<%= item.linkedin %>
+                      class="speaker-linkedin"
+                      id='speaker-linkedin'
+                      target="_blank"
+                      role="button"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+    <!-- <div class="speaker-card">
       <div class="card" style="width: 20rem"> 
         <img
             src="/images/speaker-1.jpg"
@@ -197,10 +262,10 @@
           <p class="card-text">Postdoctoral Visiting Researcher<br>CWC<br>University of Oulu, Finland</p>    
         </div>
       </div>
-    </div>
+    </div> -->
   </div> 
     <div class="speaker-redirect">
-      <a class="btn btn-lg btn-outline-primary" href="speakers" role="button">See all Speakers</a>
+      <a href="speakers" role="button">SEE ALL SPEAKERS</a>
     </div>
   </div>
 </section>
