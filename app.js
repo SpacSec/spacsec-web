@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const md5 = require("md5");
 const nodemailer = require("nodemailer");
 const output = require("./public/email/email");
+const speakers = require("./public/json/speakers-data");
 app.use(bodyParser.urlencoded({ extended: false }));
 let port = process.env.PORT;
 if (port == null || port == "") {
@@ -61,15 +62,9 @@ app.post("/", (req, res) => {
   mess.save();
   const page_name = "home";
   const success = "true";
+  const speakersData = speakers;
 
   async function sendEmail() {
-    // const output = `
-    // <h2>Thank you ${name} for getting in touch!</h2>
-    // <hr/>
-    // <p>We appreciate you contacting us. We will get back in touch with you soon!</p>
-    // <p>Cheers!</p>
-    // <p>Spacsec'21 Team</p>
-    // `;
     const outputForBackend = `
     <h2>Contact form filled</h2>
     <h4>We received message on spacsec.com: </h4>
@@ -115,7 +110,11 @@ app.post("/", (req, res) => {
     // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   }
   sendEmail().catch(console.error);
-  res.render("index", { page_name: page_name, success: success });
+  res.render("index", {
+    page_name: page_name,
+    success: success,
+    speakersData: speakersData,
+  });
 });
 
 const User = mongoose.model("User", userSchema);
