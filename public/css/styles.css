@@ -149,7 +149,7 @@ section h3:hover::after {
   color: white;
 }
 .nav-link:hover {
-  color: inherit;
+  color: var(--primary-blue);
 }
 .navbar-link:after {
   transition: all 0.2s;
@@ -279,7 +279,7 @@ header h1 {
 }
 
 header p {
-  color: var(--neutral-gray2);
+  color: var(--neutral-gray1);
   /* font-size: 1rem; */
   width: 400px;
   padding: auto 2rem;
@@ -290,30 +290,45 @@ header div {
 }
 @media (max-width: 992px) {
   header p {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 /*************** home ****************/
 
 .home-header {
+  color: white;
   /* margin-top: 5rem; */
   display: block;
-  min-height: 70vh;
+  min-height: 75vh;
   position: relative;
   /* background-image: url(../images/home-head-alt-3.jpg); */
 }
+.home-header h1 {
+  color: #fff;
+  font-family: "Inter", sans-serif !important;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 800;
+}
 .home-subtext {
+  color: var(--secondary-gray);
+}
+.home-header-small-title {
+  font-weight: 600;
   color: var(--neutral-gray1);
 }
+
 /*************** slider ****************/
 .carousel-caption {
-  bottom: 60px;
+  bottom: 50%;
+  transform: translateY(50%);
 }
 .carousel-item,
 .carousel-image {
-  height: 70vh;
+  width: 100%;
+  height: 75vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -324,17 +339,50 @@ header div {
 .carousel-image {
   filter: brightness(50%);
 }
+.header-about {
+  color: white;
+}
+.header-about h2 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.header-about p {
+  color: white;
+  width: 100%;
+}
 @media (max-width: 576px) {
   .home-header,
   .carousel-item,
   .carousel-image {
-    height: 90vh;
+    height: 100vh;
+  }
+  .home-about p {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
-
+@media (max-width: 992px) {
+  .home-about p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .details {
   /* color: var(--neutral-gray2); */
-  color: var(--gray1);
+  color: white;
+}
+.header-image {
+  filter: brightness(50%);
+  z-index: -100;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .bg {
   filter: brightness(25%);
@@ -377,6 +425,7 @@ header div {
   text-align: center;
 }
 .home-speakers a {
+  margin-bottom: 1rem;
   border: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -465,7 +514,7 @@ header div {
   margin-top: 2rem;
 }
 .tracks-header {
-  background-image: url(../images/home-head-alt-3.jpg);
+  /* background-image: url("https://source.unsplash.com/oxgK2f_rxDc/1920x1080"); */
 }
 .tracks section {
   padding-top: 1rem;
@@ -566,6 +615,7 @@ header div {
 .speaker-linkedin {
   margin-top: 1rem;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   display: block;
   font-size: 32px;
 }
@@ -1173,7 +1223,7 @@ footer {
   right: 0;
 }
 .logo img {
-  width: 50px;
+  /* width: 50px; */
   height: 50px;
 }
 footer a {
@@ -1255,15 +1305,15 @@ footer h5 {
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 3rem;
+  .home-header h1 {
+    font-size: 2.5rem;
   }
-  .home-header p {
+  /* .home-subtext {
     margin-left: 3rem;
     margin-right: 3rem;
     padding-left: 3rem;
-    padding-right: 3rem;
-  }
+    padding-right: 3rem; */
+  /* } */
   section h3::after {
     display: none;
   }
