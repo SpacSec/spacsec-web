@@ -294,7 +294,10 @@ header div {
     padding-right: 2rem;
   }
 }
-
+/* 404 not found */
+.not-found-header {
+  min-height: 100vh;
+}
 /*************** home ****************/
 
 .home-header {
@@ -1268,13 +1271,9 @@ footer h5 {
     margin-top: 1rem;
   }
 }
-/**************** contact us ****************/
-.contact-header {
-  background-image: url(../images/home-head-alt-3.jpg);
-}
 /**************** auth form ****************/
 .auth-header {
-  height: 20vh;
+  height: 40vh;
 }
 .auth-form {
   width: 30%;
@@ -1293,14 +1292,23 @@ footer h5 {
   }
 }
 .form-responses-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 .response-card {
-  margin-bottom: 1rem;
+  margin: 1rem;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 1rem;
+}
+.form-datetime {
+  padding: 0.5rem;
+  background: var(--gray1);
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 .count {
   text-align: center;

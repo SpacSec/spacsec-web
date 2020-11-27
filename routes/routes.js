@@ -48,5 +48,9 @@ router.get("/login", (req, res) => {
   const page_name = "login";
   res.render("auth/login", { page_name: page_name });
 });
+router.get("*", (req, res) => {
+  const page_name = "404";
+  res.render("notfound", { page_name: page_name });
+});
 
 module.exports = router;
