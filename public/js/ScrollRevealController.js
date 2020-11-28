@@ -1,9 +1,9 @@
 const revealCards = {
   easing: "ease-in",
-  delay: 0,
+  delay: 10,
   reset: false,
   interval: 20,
-};
+};>
 const reveal = {
   easing: "ease-in",
   delay: 200,

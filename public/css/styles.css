@@ -22,7 +22,6 @@
   overflow: hidden;
 }
 .load-hidden {
-  visibility: hidden;
 }
 .btn {
   font-weight: 600;
@@ -86,7 +85,6 @@ h5 {
   padding: 1rem;
 }
 section {
-  visibility: hidden;
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -427,7 +425,6 @@ header div {
   /* background-color: var(--primary-black); */
 }
 .home-about {
-  visibility: hidden;
 }
 .home-about p {
   color: var(--primary-black);
@@ -517,7 +514,7 @@ header div {
 
 .tracks {
   /* background: var(--secondary-gray); */
-  visibility: hidden;
+
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -604,7 +601,6 @@ header div {
   grid-template-columns: auto auto auto;
 }
 .card {
-  visibility: hidden;
   border: none;
   box-shadow: var(--shadow);
   border-radius: 8px;
@@ -679,7 +675,7 @@ header div {
 }
 .timeline .timeline-row {
   display: flex;
-  visibility: hidden;
+
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -709,7 +705,7 @@ header div {
   color: var(--neutral-gray2);
 }
 .timeline .timeline-row .roadmap-point {
-  /* visibility: hidden; */
+  /*  */
   background: white;
   height: 15px;
   width: 15px;
@@ -719,8 +715,6 @@ header div {
 }
 
 .roadmap-path {
-  visibility: hidden;
-
   background: var(--primary-gradient);
   height: 980px;
   width: 4px;
@@ -819,7 +813,7 @@ header div {
   text-align: center;
   padding: 1rem;
   width: 370px;
-  visibility: hidden;
+  /*  */
 }
 
 .core-committee .core-committee-row .member .member-name {
@@ -853,7 +847,7 @@ header div {
 .technical-committee .technical-committee-row .member {
   text-align: center;
   /*  */
-  visibility: hidden;
+
   /* color: #3d3e53; */
   margin-left: 2rem;
   margin-right: 2rem;
@@ -882,7 +876,7 @@ header div {
 
 .advisory-committee .advisory-committee-row .member {
   text-align: center;
-  visibility: hidden;
+
   margin-left: 2rem;
   margin-right: 2rem;
   width: 300px;
