@@ -43,6 +43,10 @@ router.get("/credits", (req, res) => {
   const page_name = "credits";
   res.render("credits", { page_name: page_name });
 });
+router.get("/gallery", (req, res) => {
+  const page_name = "gallery";
+  res.render("gallery", { page_name: page_name });
+});
 //auth
 router.get("/login", (req, res) => {
   const page_name = "login";
