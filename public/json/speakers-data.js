@@ -112,9 +112,9 @@ const speakers = [
   {
     name: "Cem Avsar",
     image: "/images/dummy.jpg",
-    institute: "TU Berlin",
-    location: "Managing Director bei beSpace GmbH and Scientific Coordinator",
-    country: "",
+    institute: "Managing Director bei beSpace GmbH and Scientific Coordinator",
+    location: "",
+    country: "TU Berlin",
     details: `
   
     `,
