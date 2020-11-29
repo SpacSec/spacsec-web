@@ -2,9 +2,9 @@ const speakers = [
   {
     name: "Prof. Walter Peeters",
     image: "/images/Prof.WalterPeeters.jpg",
-    institute: "Technical University of Delft",
-    location: "Delft",
-    country: "Netherlands",
+    institute: "Adviser",
+    location: "International Space University",
+    country: "France",
     details: `
     Has been with ESA since 1983 after initial activities in industry (construction, petrochemical). 
     In ESA: project control and coordination on the Hermes project and the EUROMIR flights with Russia, 
@@ -23,8 +23,8 @@ const speakers = [
     name: "Prof. Ajay Gupta",
     image: "/images/Prof.AjayGupta.jpg",
     institute: "Western Michigan University",
-    location: "Kalamazoo",
-    country: "MI",
+    location: "Michigan",
+    country: "USA",
     details: `
       Ajay Gupta is a Professor of Computer Science at Western
       Michigan University. He is quite active in IEEE-Computer
@@ -113,8 +113,8 @@ const speakers = [
     name: "Cem Avsar",
     image: "/images/dummy.jpg",
     institute: "Managing Director bei beSpace GmbH and Scientific Coordinator",
-    location: "",
-    country: "TU Berlin",
+    location: "TU Berlin",
+    country: "",
     details: `
   
     `,
