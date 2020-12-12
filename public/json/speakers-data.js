@@ -55,7 +55,7 @@ const speakers = [
     linkedin: "https://www.google.com/",
   },
   {
-    name: "Anshuman Kalla",
+    name: "Dr. Anshuman Kalla",
     image: "/images/AnshumanKalla.png",
     institute: "Postdoctoral Visiting Researcher",
     location: "CWC",
