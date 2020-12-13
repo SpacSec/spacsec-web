@@ -113,7 +113,7 @@ const speakers = [
     name: "Cem Avsar",
     image: "/images/dummy.jpg",
     institute: "Managing Director bei beSpace GmbH and Scientific Coordinator",
-    location: "TU Berlin",
+    location: "TU, Berlin",
     country: "",
     details: `
   
