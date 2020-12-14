@@ -65,25 +65,39 @@ const speakers = [
     `,
     linkedin: "#",
   },
-  {  //content writer
+  {  
     name: "Dr. Geeta Sikka",
     image: "/images/Dr.GeetaSikka.png",
     institute: "NIT Kurukshetra",
     location: "Jalandhar",
     country: "India",
     details: `
-  
+    Dr Geeta Sikka is an associate professor at the National Institute of 
+    Technology, Jalandhar. Her research interests lie in data mining, data 
+    warehousing, databases, data science, big data and cloud computing. 
+    <br><br>
+    Dr Sikka completed her M.Tech in Computer Science from Punjab Agricultural 
+    University in 2004. Later she earned a Ph.D. in Analysis & Design of 
+    Analogy based Software Effort Estimation Approaches from NIT, Jalandhar. 
+    Apart from this, she has also contributed to many chapters in various books.
     `,
     linkedin: "#",
   },
-  { //content writer
+  { 
     name: "Dr. PK Garg",
     image: "/images/Dr.P.K.Garg.png",
     institute: "India Institute Of Technology",
     location: "Roorkee",
     country: "India",
     details: `
-  
+    Dr P.K. Garg is a professor at the Indian Institute of Technology, Roorkee. 
+    In 1991, he earned a Ph.D. in Remote Sensing from the University of Bristol 
+    followed by a post-doctoral in 1999. His areas of interest lie in satellite 
+    image analysis, land-use mapping, land surveying, digital image processing, 
+    GPS Survey and GIS.<br><br>
+    Dr Garg worked at the University of Roorkee for nineteen years before 
+    joining IIT Roorkee in 2001. Along with this, he has also authored several 
+    books.
     `,
     linkedin: "#",
   },
@@ -98,25 +112,40 @@ const speakers = [
     `,
     linkedin: "#",
   },
-  { //content writer
+  { 
     name: "Dr. B.B. Gupta",
     image: "/images/Dr.B.B.Gupta.png",
     institute: "NIT Kurukshetra",
     location: "Jalandhar",
     country: "India",
     details: `
-  
+    Dr B.B. Gupta is an assistant professor at the National Institute of 
+    Technology, Kurukshetra. He has an experience of over ten years in teaching 
+    and research and has published more than two hundred research papers. His 
+    interests lie primarily in information security, cyber security, big data 
+    analytics, botnet detection, network performance evaluation and much more.
+    <br><br>
+    He was awarded the Best Faculty Award at NIT Kurukshetra in 2019. Apart 
+    from this, he was also a member of ACM, IEEE and SIGCOMM.
     `,
     linkedin: "#",
   },
-  { //content writer
+  { 
     name: "Cem Avsar",
     image: "/images/CemAvsar.png",
-    institute: "Managing Director bei beSpace GmbH and Scientific Coordinator",
+    institute: "Managing Director at beSpace GmbH and Scientific Coordinator",
     location: "TU, Berlin, Germany",
     country: "",
     details: `
-  
+    Cem Avsar is a managing director at beSpace GmbH and a research assistant 
+    at TU Berlin. Being a Study Program Manager in the Master of Space Engineer 
+    program, he has taught and supervised many students. Before this, he has 
+    given lectures on satellite technology, aerospace technology, aerospace 
+    electronics etc. He believes in hands-on learning and has introduced novel 
+    ways to teach the students.<br><br>
+    In 2010, he earned his diploma in Aerospace Engineering from TU 
+    Berlin. He has also been a research associate in the iBOSS project and a 
+    former CAD graphic designer at Ingencio, Berlin.
     `,
     linkedin: "#",
   },
