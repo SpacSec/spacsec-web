@@ -147,8 +147,8 @@ const speakers = [
     name: "Dr. Pushpendu Kar",
     image: "/images/Dr.PushpenduKar.png",
     institute: "School of Computer Science at the University of Nottingham (Ningbo China Campus)",
-    location: "",
-    country: "UK",
+    location: "UK",
+    country: "",
     details: `
     Dr. Pushpendu Kar is an Assistant Professor in the School of Computer 
     Science at the University of Nottingham Ningbo China (China campus of 
