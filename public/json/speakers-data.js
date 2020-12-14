@@ -182,8 +182,7 @@ const speakers = [
     by ISRO’s GAGAN (GPS Aided Geostationary Augmented Navigation) and IRNSS 
     (Indian Regional Navigation Satellite System) programs; radar imaging surveillance 
     satellites; attitude determination, control, and GPS-based navigation of nanosatellites. 
-    In 2003, Dr. Hablani was honored as a Distinguished Alumnus of the Indian Institute of 
-    Science, Bangalore, India.<br>
+    <br>
     Over the last five years, he has guided 15 MTech, Dual Degree and BTech students’ projects. 
     Some of these research areas are Spacecraft dynamics and control, Launch vehicles or Reusable 
     Launch Vehicles, Satellite-based air navigation, Missile Guidance and relative navigation, 
