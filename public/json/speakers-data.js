@@ -36,8 +36,8 @@ const speakers = [
   {  
     name: "Dr. Geeta Sikka",
     image: "/images/Dr.GeetaSikka.png",
-    institute: "NIT Kurukshetra",
-    location: "Jalandhar",
+    institute: "Associate Professor",
+    location: "NIT Jalandhar",
     country: "India", 
     //details: `
     //Dr Geeta Sikka is an associate professor at the National Institute of 
@@ -57,7 +57,7 @@ const speakers = [
   { 
     name: "Dr. PK Garg",
     image: "/images/Dr.P.K.Garg.png",
-    institute: "India Institute Of Technology",
+    institute: "India Institute of Technology",
     location: "Roorkee",
     country: "India",
     //details: `
@@ -78,8 +78,8 @@ const speakers = [
   { 
     name: "Dr. B.B. Gupta",
     image: "/images/Dr.B.B.Gupta.png",
-    institute: "NIT Kurukshetra",
-    location: "Jalandhar",
+    institute: "Assistant Professor",
+    location: "NIT Kurukshetra",
     country: "India",
     //details: `
     //Dr B.B. Gupta is an assistant professor at the National Institute of 
@@ -147,9 +147,9 @@ const speakers = [
   {
     name: "Dr. Pushpendu Kar",
     image: "/images/Dr.PushpenduKar.png",
-    institute: "School of Computer Science at the University of Nottingham (Ningbo China Campus)",
-    location: "UK",
-    country: "",
+    institute: "University of Nottingham",
+    location: "(Ningbo China Campus)",
+    country: "UK",
     //details: `
     //Dr. Pushpendu Kar is an Assistant Professor in the School of Computer 
     //Science at the University of Nottingham Ningbo China (China campus of 
@@ -175,7 +175,7 @@ const speakers = [
     name: "Dr. Hari B. Hablani",
     image: "/images/Dr.HariB.Hablani.png",
     institute: "Professor (Dept. of Aerospace Engineering)",
-    location: "IIT, Bombay",
+    location: "Indian Institute of Technology, Bombay",
     country: "India",
     //details: `
     //Prior to joining IITB, Dr. Hablani was a Visiting Faculty Professor at the 
