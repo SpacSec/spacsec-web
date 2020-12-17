@@ -17,16 +17,14 @@ const speakers = [
     //<br>
     //Former Dean and President of ISU (till 2018)
     //`,
-    details: `
-    https://www.isunet.edu/prof-walter-peeters/
-    `,
+    workprofile: "https://www.isunet.edu/prof-walter-peeters/",
     linkedin: "#",
   },
   {
     name: "Dr. Hari B. Hablani",
     image: "/images/Dr.HariB.Hablani.png",
-    institute: "Professor (Dept. of Aerospace Engineering)",
-    location: "Indian Institute of Technology, Bombay",
+    institute: "Professor",
+    location: "IIT, Bombay",
     country: "India",
     //details: `
     //Prior to joining IITB, Dr. Hablani was a Visiting Faculty Professor at the 
@@ -43,9 +41,7 @@ const speakers = [
     //Launch Vehicles, Satellite-based air navigation, Missile Guidance and relative navigation, 
     //Motion compensation of synthetic aperture radar on a cruise flight.
     //`,
-    details: `
-    https://www.aero.iitb.ac.in/~hbhablani/
-    `,
+    workprofile: "https://www.aero.iitb.ac.in/~hbhablani/",
     linkedin: "#",
   },
   { 
@@ -65,9 +61,7 @@ const speakers = [
     //Berlin. He has also been a research associate in the iBOSS project and a 
     //former CAD graphic designer at Ingencio, Berlin.
     //`,
-    details: `
-    https://www.raumfahrttechnik.tu-berlin.de/menue/ueber_uns/mitarbeiterinnen/dipl_ing_cem_avsar/
-    `,
+    workprofile: "https://www.raumfahrttechnik.tu-berlin.de/menue/ueber_uns/mitarbeiterinnen/dipl_ing_cem_avsar/",
     linkedin: "#",
   },
   { 
@@ -86,9 +80,7 @@ const speakers = [
     //joining IIT Roorkee in 2001. Along with this, he has also authored several 
     //books.
     //`,
-    details: `
-    https://www.iitr.ac.in/departments/CE/pages/People+Faculty+Garg_P_K_.html
-    `,
+    workprofile: "https://www.iitr.ac.in/departments/CE/pages/People+Faculty+Garg_P_K_.html",
     linkedin: "#",
   },
   {  
@@ -107,9 +99,7 @@ const speakers = [
     //Analogy based Software Effort Estimation Approaches from NIT, Jalandhar. 
     //Apart from this, she has also contributed to many chapters in various books.
     //`,
-    details: `
-    https://www.nitj.ac.in/index.php/nitj_cinfo/Faculty/30
-    `,
+    workprofile: "https://www.nitj.ac.in/index.php/nitj_cinfo/Faculty/30",
     linkedin: "#",
   },
   {
@@ -133,9 +123,7 @@ const speakers = [
     //Kolkata, India. He is also a Life member of the Indian Society of Technical 
     //Education (LM-ISTE) and a member of the Indian Science Congress (M-ISC).
     //`,
-    details: `
-    https://engineering.sfsu.edu/lecturer-profile-vidhyacharan-bhaskar
-    `,
+    workprofile: "https://engineering.sfsu.edu/lecturer-profile-vidhyacharan-bhaskar",
     linkedin: "#",
   },
   { 
@@ -154,9 +142,7 @@ const speakers = [
     //He was awarded the Best Faculty Award at NIT Kurukshetra in 2019. Apart 
     //from this, he was also a member of ACM, IEEE and SIGCOMM.
     //`,
-    details: `
-    https://nitkkr.ac.in/comp_faculty_details.php?idd=96
-    `,
+    workprofile: "https://nitkkr.ac.in/comp_faculty_details.php?idd=96",
     linkedin: "#",
   },
   {
@@ -181,9 +167,7 @@ const speakers = [
     //and control in a smart building environment, healthcare, and transportation. He 
     //has the expert skill to develop JAVA programs for real-life projects.
     //`,
-    details: `
-    https://www.nottingham.edu.cn/en/Science-Engineering/People/Staff-Profile-Redirect.aspx?name=pushpendu-kar
-    `,
+    workprofile: "https://www.nottingham.edu.cn/en/Science-Engineering/People/Staff-Profile-Redirect.aspx?name=pushpendu-kar",
     linkedin: "#",
   },
   { //not yet available
@@ -192,9 +176,7 @@ const speakers = [
     institute: "Postdoctoral Visiting Researcher",
     location: "CWC",
     country: "University of Oulu, Finland",
-    details: `
-  
-    `,
+    workprofile: "#",
     linkedin: "#",
   },
 ];
