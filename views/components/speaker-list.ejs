@@ -11,16 +11,30 @@
             <%= item.institute %><br /><%= item.location %><br /><%=
             item.country %>
           </p>
-          <div class="know-more">
-            <a
-              class="know-more-btn "
-              id="know-more-btn"
-              type="button"
-              data-toggle="modal" data-target="#s1" aria-expanded="false"
-              aria-controls="s1" > READ MORE
-            </a>
+          <div class="speaker-links">
+            <div class="learn-more">
+              <a
+                class="learn-more-btn btn btn-primary"
+                id="learn-more-btn"
+                role="button"
+                target="_blank"
+                href=<%= item.workprofile %>
+              >
+                LEARN MORE
+              </a>
+            </div>
+            <div class="speaker-linkedin-btn">
+              <a
+                class="speaker-linkedin"
+                id='speaker-linkedin'
+                target="_blank"
+                role="button"
+                href=<%= item.linkedin %>
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
           </div>
-          <div
+    <!--      <div
             class="modal fade"
             id="s1"
             data-backdrop="static"
@@ -58,8 +72,8 @@
                     ></a>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>    
+          </div>  -->
         </div>
       </div>
     </div>
