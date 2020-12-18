@@ -62,7 +62,7 @@ const speakers = [
     //former CAD graphic designer at Ingencio, Berlin.
     //`,
     workprofile: "https://www.raumfahrttechnik.tu-berlin.de/menue/ueber_uns/mitarbeiterinnen/dipl_ing_cem_avsar/",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/cemavsar/",
   },
   { 
     name: "Dr. PK Garg",
@@ -168,7 +168,7 @@ const speakers = [
     //has the expert skill to develop JAVA programs for real-life projects.
     //`,
     workprofile: "https://www.nottingham.edu.cn/en/Science-Engineering/People/Staff-Profile-Redirect.aspx?name=pushpendu-kar",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/pushpendu-kar-b39576104/",
   },
   { 
     name: "Dr. Anshuman Kalla",
