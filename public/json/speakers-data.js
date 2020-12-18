@@ -2,8 +2,8 @@ const speakers = [
   {
     name: "Prof. Walter Peeters",
     image: "/images/Prof.WalterPeeters.jpg",
-    institute: "Adviser",
-    location: "International Space University",
+    institute: "International Space University",
+    location: "Illkirch-Graffenstaden",
     country: "France",
     //details: `
     //Has been with ESA since 1983 after initial activities in industry (construction, petrochemical). 
@@ -23,8 +23,8 @@ const speakers = [
   {
     name: "Dr. Hari B. Hablani",
     image: "/images/Dr.HariB.Hablani.png",
-    institute: "Professor",
-    location: "IIT, Bombay",
+    institute: "Indian Institute of Technology",
+    location: "Bombay",
     country: "India",
     //details: `
     //Prior to joining IITB, Dr. Hablani was a Visiting Faculty Professor at the 
@@ -86,8 +86,8 @@ const speakers = [
   {  
     name: "Dr. Geeta Sikka",
     image: "/images/Dr.GeetaSikka.png",
-    institute: "Associate Professor",
-    location: "NIT Jalandhar",
+    institute: "National Institute of Technology",
+    location: "Jalandhar",
     country: "India", 
     //details: `
     //Dr Geeta Sikka is an associate professor at the National Institute of 
@@ -129,8 +129,8 @@ const speakers = [
   { 
     name: "Dr. B.B. Gupta",
     image: "/images/Dr.B.B.Gupta.png",
-    institute: "Assistant Professor",
-    location: "NIT Kurukshetra",
+    institute: "National Institute of Technolog",
+    location: "Kurukshetra",
     country: "India",
     //details: `
     //Dr B.B. Gupta is an assistant professor at the National Institute of 
@@ -173,9 +173,9 @@ const speakers = [
   { //not yet available
     name: "Dr. Anshuman Kalla",
     image: "/images/AnshumanKalla.png",
-    institute: "Postdoctoral Visiting Researcher",
-    location: "CWC",
-    country: "University of Oulu, Finland",
+    institute: "CWC",
+    location: "University of Oulu",
+    country: "Finland",
     workprofile: "#",
     linkedin: "#",
   },
