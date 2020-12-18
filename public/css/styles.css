@@ -476,7 +476,6 @@ header div {
   align-items: center;
 }
 
-
 @media (max-width: 992px) {
   .home-header .btn {
     margin-bottom: 1rem;
@@ -611,17 +610,23 @@ header div {
 }
 
 .speaker-links {
+  font-weight: 500;
+  align-items: baseline;
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
 }
 
 .speaker-linkedin {
-  font-size: 42px;
+  font-size: 32px;
   display: flex;
-  margin-left: 5.75rem;
+  margin-left: 1rem;
 }
 
-.speaker-linkedin:link, .speaker-linkedin:visited, .speaker-linkedin:hover, .speaker-linkedin:active {
+.speaker-linkedin:link,
+.speaker-linkedin:visited,
+.speaker-linkedin:hover,
+.speaker-linkedin:active {
   text-decoration: none;
 }
 
