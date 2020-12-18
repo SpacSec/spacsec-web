@@ -170,14 +170,14 @@ const speakers = [
     workprofile: "https://www.nottingham.edu.cn/en/Science-Engineering/People/Staff-Profile-Redirect.aspx?name=pushpendu-kar",
     linkedin: "#",
   },
-  { //not yet available
+  { 
     name: "Dr. Anshuman Kalla",
     image: "/images/AnshumanKalla.png",
     institute: "CWC",
     location: "University of Oulu",
     country: "Finland",
-    workprofile: "#",
-    linkedin: "#",
+    workprofile: "https://sites.google.com/site/kallanshuman/",
+    linkedin: "https://www.linkedin.com/in/anshuman-kalla-b41b23133/",
   },
 ];
 module.exports = speakers;
