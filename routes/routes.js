@@ -19,6 +19,10 @@ router.get("/speakers", (req, res) => {
   const page_name = "speakers";
   res.render("speakers", { page_name: page_name, speakersData: speakersData });
 });
+router.get("/special", (req, res) => {
+  const page_name = "special";
+  res.render("special", { page_name: page_name });
+});
 router.get("/schedule", (req, res) => {
   const page_name = "schedule";
   res.render("schedule", { page_name: page_name });
