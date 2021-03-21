@@ -1233,6 +1233,36 @@ header div {
   align-items: center;
 }
 
+/***************** special *****************/
+.special .session-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.special .session-details .session-article .session-article-head{
+  text-align: center;
+}
+.special .session-details .session-article h6{
+  text-align: center;
+}
+.special .session-details .session-article .special-template-pc{
+  text-align: center;
+}
+.special .session-details .session-article .special-template-mob{
+  display: none;
+}
+@media (max-width: 992px) {
+  .special{
+    padding: 0px 20px 0px 20px;
+  }
+  .special .session-details .session-article .special-template-pc{
+    display: none;
+  }
+  .special .session-details .session-article .special-template-mob{
+    text-align: center;
+    display: block;
+  }
+}
 /***************** footer *****************/
 footer {
   background: var(--primary-black);
