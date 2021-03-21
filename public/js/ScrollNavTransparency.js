@@ -4,8 +4,9 @@ const navToggler = document.querySelector(".navbar-toggler");
 window.onscroll = function () {
   "use strict";
   if (
-    document.body.scrollTop >= 64 ||
-    document.documentElement.scrollTop >= 64
+    document.body.scrollTop > 0 ||
+    document.documentElement.scrollTop > 0 ||
+    !navToggler.classList.contains("collapsed")
   ) {
     document.querySelectorAll(".navbar-link").forEach((el) => {
       el.style.color = "#000";
