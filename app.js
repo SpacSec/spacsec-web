@@ -4,8 +4,6 @@ const routes = require("./routes/routes");
 const app = express();
 const mongoose = require("mongoose");
 const md5 = require("md5");
-const nodemailer = require("nodemailer");
-const output = require("./public/email/email");
 const speakers = require("./public/json/speakers-data");
 app.use(bodyParser.urlencoded({ extended: false }));
 let port = process.env.PORT;
@@ -65,52 +63,6 @@ app.post("/", (req, res) => {
   const success = "true";
   const speakersData = speakers;
 
-  async function sendEmail() {
-    const outputForBackend = `
-    <h2>Contact form filled</h2>
-    <h4>We received message on spacsec.com: </h4>
-    <hr/>
-    <p>Name: ${name}</p>
-    <p>Email: <a href="mailto:${email}">${email}</a></p>
-    <p>Message:</p>
-    <p>${message}</p>
-    <hr/>
-    <p>
-    Visit <a href="https://spacsec.com/login/">here</a> to view all the form responses.
-    </p>
-    `;
-    let transporter = nodemailer.createTransport({
-      name: "spacsec.com",
-      host: "mail.spacsec.com",
-      port: 587,
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: "noreply@spacsec.com", // generated ethereal user
-        pass: "*C!RNJSak2lF", // generated ethereal password
-      },
-      tls: {
-        rejectUnauthorized: false,
-      },
-    });
-    console.log("made the mail");
-    let info = await transporter.sendMail({
-      from: '"SpacSec Team" <noreply@spacsec.com>', // sender address
-      to: email,
-      subject: "Thanks for contacting us!", // Subject line
-      html: output(name), // html body
-    });
-    let infoBackendMail = await transporter.sendMail({
-      from: '"Website Response" <noreply@spacsec.com>', // sender address
-      to: "manavendra4288@gmail.com",
-      subject: "Contact Form Submitted", // Subject line
-      html: outputForBackend, // html body
-    });
-
-    console.log("Message sent: %s", info.messageId);
-    console.log("Message sent: %s", infoBackendMail.messageId);
-    // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  }
-  sendEmail().catch(console.error);
   res.render("index", {
     page_name: page_name,
     success: success,
