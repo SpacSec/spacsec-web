@@ -1079,6 +1079,12 @@ header div {
   width: 900px;
 }
 
+.snip-table-mobile{
+  border: 4px solid black;
+  width: 330px;
+  display: none;
+}
+
 .snip-titile {
   margin-left: -0.25rem;
 }
@@ -1117,7 +1123,7 @@ header div {
   border-top: 3px solid black;
 }
 
-.snip-table tr td {
+.snip-table tr td, .snip-table-mobile tr td {
   border: 2px solid grey;
 }
 
@@ -1173,14 +1179,25 @@ header div {
   }
   .dashboard-table-mobile {
     display: block;
+    padding: 3rem;
+  }
+  .dashboard-sections{
+    padding-left: 4rem;
+  }
+  .dashboard-snip, .snip-titile{
+    padding-right: 4rem;
+  }
+  .snip-example, .snip-list{
+    padding-right: 6rem;
   }
   .dashboard-table {
     display: none;
   }
   .snip-table {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
+  }
+  .snip-table-mobile{
+    display: block;
   }
   #d-1,
   #d-2,
