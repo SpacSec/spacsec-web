@@ -1135,7 +1135,20 @@ header div {
   margin-bottom: 0.625rem;
 }
 
+.dashboard-logos {
+  justify-content: center;
+  grid-gap: 4rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 @media (max-width: 992px) {
+  .dashboard-logos {
+    grid-gap: 3rem;
+    grid-template-columns: auto auto;
+    transform: scale(0.75);
+  }
+
   .dashboard-info {
     flex-direction: column;
   }
@@ -1192,6 +1205,7 @@ header div {
     margin-left: -1rem;
   }
 }
+
 /***************** credits *****************/
 .credits {
   display: flex;
