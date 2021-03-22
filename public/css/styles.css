@@ -1143,17 +1143,19 @@ header div {
 }
 
 .dashboard-info .publication-info-1{
-  margin-bottom: 1rem;
-  padding: 3rem;
+  margin-bottom: 5rem;
+}
+
+.dashboard-info .publication-info-2{
+  margin-bottom: 4rem;
 }
 
 .dashboard-info .publication-info-2 p{
-  margin-bottom: -1rem;
+  margin-bottom: 1rem;
 }
 
 .dashboard-info .publication-info-3{
-  margin-bottom: 1rem;
-  padding: 3rem;
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 992px) {
@@ -1217,6 +1219,19 @@ header div {
   .dashboard .nav-tabs {
     width: 400px;
     margin-left: -1rem;
+  }
+  .dashboard-info .publication-info-1{
+    margin-bottom: 1rem;
+    padding: 3rem;
+  }
+
+  .dashboard-info .publication-info-2 p{
+    margin-bottom: -1rem;
+  }
+
+  .dashboard-info .publication-info-3{
+    margin-bottom: 1rem;
+    padding: 3rem;
   }
 }
 
