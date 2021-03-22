@@ -1225,6 +1225,10 @@ header div {
     padding: 3rem;
   }
 
+  .dashboard-info .publication-info-2{
+    margin-bottom: -2rem;
+  }
+
   .dashboard-info .publication-info-2 p{
     margin-bottom: -1rem;
   }
