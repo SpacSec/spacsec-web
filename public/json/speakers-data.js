@@ -14,7 +14,8 @@ const speakers = [
     institute: "University of Nottingham",
     location: "UK",
     country: "",
-    workprofile: "https://scholar.google.co.uk/citations?user=TBx0aJcAAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.co.uk/citations?user=TBx0aJcAAAAJ&hl=en",
     linkedin: "#",
   },
   {
@@ -23,7 +24,8 @@ const speakers = [
     institute: "Indian Institute of Technology",
     location: "Roorkee",
     country: "India",
-    workprofile: "https://scholar.google.co.in/citations?user=ys_F33sAAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.co.in/citations?user=ys_F33sAAAAJ&hl=en",
     linkedin: "#",
   },
   {
@@ -41,7 +43,8 @@ const speakers = [
     institute: "University of Surrey",
     location: "England",
     country: "UK",
-    workprofile: "https://scholar.google.co.in/citations?user=lXpUuUoAAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.co.in/citations?user=lXpUuUoAAAAJ&hl=en",
     linkedin: "#",
   },
   {
@@ -50,7 +53,8 @@ const speakers = [
     institute: "San Francisco State University",
     location: "USA",
     country: "",
-    workprofile: "https://scholar.google.co.in/citations?user=l-v7IcMAAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.co.in/citations?user=l-v7IcMAAAAJ&hl=en",
     linkedin: "#",
   },
   {
@@ -59,7 +63,8 @@ const speakers = [
     institute: "Taylor's University",
     location: "Subang Jaya",
     country: "Malaysia",
-    workprofile: "https://scholar.google.com.pk/citations?user=J6QVIncAAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.com.pk/citations?user=J6QVIncAAAAJ&hl=en",
     linkedin: "#",
   },
   {
@@ -68,7 +73,8 @@ const speakers = [
     institute: "Charles Darwin University",
     location: "Australia",
     country: "",
-    workprofile: "https://scholar.google.co.in/citations?user=Q5bdIr4AAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.co.in/citations?user=Q5bdIr4AAAAJ&hl=en",
     linkedin: "#",
   },
   {
@@ -86,7 +92,8 @@ const speakers = [
     institute: "SEUSL",
     location: "Sri Lanka",
     country: "",
-    workprofile: "https://scholar.google.co.in/citations?user=bZQzqjsAAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.co.in/citations?user=bZQzqjsAAAAJ&hl=en",
     linkedin: "#",
   },
   {
@@ -113,7 +120,8 @@ const speakers = [
     institute: "Manipal Academy of Higher Education",
     location: "India",
     country: "",
-    workprofile: "https://scholar.google.co.in/citations?user=VBj6NyUAAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.co.in/citations?user=VBj6NyUAAAAJ&hl=en",
     linkedin: "#",
   },
   {
@@ -131,7 +139,8 @@ const speakers = [
     institute: "CWC",
     location: "University of Oulu",
     country: "Finland",
-    workprofile: "https://scholar.google.co.in/citations?user=Sph3lA0AAAAJ&hl=en",
+    workprofile:
+      "https://scholar.google.co.in/citations?user=Sph3lA0AAAAJ&hl=en",
     linkedin: "https://www.linkedin.com/in/anshuman-kalla-b41b23133/",
   },
   {
@@ -149,7 +158,8 @@ const speakers = [
     institute: "International Space University",
     location: "Illkirch-Graffenstaden",
     country: "France",
-    workprofile: "https://www.scopus.com/results/authorNamesList.uri?sort=count-f&src=al&sid=14f32ef182cdbcf74020333bd00c776b&sot=al&sdt=al&sl=43&s=AUTHLASTNAME%28WALTER%29+AND+AUTHFIRST%28PEETERS%29&st1=WALTER&st2=PEETERS&orcidId=&selectionPageSearch=anl&reselectAuthor=false&activeFlag=true&showDocument=false&resultsPerPage=20&offset=1&jtp=false&currentPage=1&previousSelectionCount=0&tooManySelections=false&previousResultCount=0&authSubject=LFSC&authSubject=HLSC&authSubject=PHSC&authSubject=SOSC&exactAuthorSearch=false&showFullList=false&authorPreferredName=&origin=searchauthorfreelookup&affiliationId=&txGid=a2d8b5ec76d4f64c0eaa0d80323b8900",
+    workprofile:
+      "https://www.scopus.com/results/authorNamesList.uri?sort=count-f&src=al&sid=14f32ef182cdbcf74020333bd00c776b&sot=al&sdt=al&sl=43&s=AUTHLASTNAME%28WALTER%29+AND+AUTHFIRST%28PEETERS%29&st1=WALTER&st2=PEETERS&orcidId=&selectionPageSearch=anl&reselectAuthor=false&activeFlag=true&showDocument=false&resultsPerPage=20&offset=1&jtp=false&currentPage=1&previousSelectionCount=0&tooManySelections=false&previousResultCount=0&authSubject=LFSC&authSubject=HLSC&authSubject=PHSC&authSubject=SOSC&exactAuthorSearch=false&showFullList=false&authorPreferredName=&origin=searchauthorfreelookup&affiliationId=&txGid=a2d8b5ec76d4f64c0eaa0d80323b8900",
     linkedin: "#",
   },
   {
@@ -158,8 +168,10 @@ const speakers = [
     institute: "Managing Director at beSpace GmbH and Scientific Coordinator",
     location: "TU, Berlin, Germany",
     country: "",
-    workprofile: "https://www.scopus.com/results/authorNamesList.uri?sort=count-f&src=al&sid=4ce032c763cf9bb42d294ae5d8a1dadb&sot=al&sdt=al&sl=38&s=AUTHLASTNAME%28Avsar%29+AND+AUTHFIRST%28Cem%29&st1=Avsar&st2=Cem&orcidId=&selectionPageSearch=anl&reselectAuthor=false&activeFlag=true&showDocument=false&resultsPerPage=20&offset=1&jtp=false&currentPage=1&previousSelectionCount=0&tooManySelections=false&previousResultCount=0&authSubject=LFSC&authSubject=HLSC&authSubject=PHSC&authSubject=SOSC&exactAuthorSearch=false&showFullList=false&authorPreferredName=&origin=searchauthorfreelookup&affiliationId=&txGid=7ad132e3b4f97b185dfb2b75805ff563",
+    workprofile:
+      "https://www.scopus.com/results/authorNamesList.uri?sort=count-f&src=al&sid=4ce032c763cf9bb42d294ae5d8a1dadb&sot=al&sdt=al&sl=38&s=AUTHLASTNAME%28Avsar%29+AND+AUTHFIRST%28Cem%29&st1=Avsar&st2=Cem&orcidId=&selectionPageSearch=anl&reselectAuthor=false&activeFlag=true&showDocument=false&resultsPerPage=20&offset=1&jtp=false&currentPage=1&previousSelectionCount=0&tooManySelections=false&previousResultCount=0&authSubject=LFSC&authSubject=HLSC&authSubject=PHSC&authSubject=SOSC&exactAuthorSearch=false&showFullList=false&authorPreferredName=&origin=searchauthorfreelookup&affiliationId=&txGid=7ad132e3b4f97b185dfb2b75805ff563",
     linkedin: "https://www.linkedin.com/in/cemavsar/",
   },
 ];
+
 module.exports = speakers;
