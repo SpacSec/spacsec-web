@@ -1079,7 +1079,7 @@ header div {
   width: 900px;
 }
 
-.snip-table-mobile{
+.snip-table-mobile {
   border: 4px solid black;
   width: 330px;
   display: none;
@@ -1123,7 +1123,8 @@ header div {
   border-top: 3px solid black;
 }
 
-.snip-table tr td, .snip-table-mobile tr td {
+.snip-table tr td,
+.snip-table-mobile tr td {
   border: 2px solid grey;
 }
 
@@ -1141,6 +1142,16 @@ header div {
   margin-bottom: 0.625rem;
 }
 
+.dashboard-image {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-image > div {
+  margin-right: 3rem;
+}
 .dashboard-logos {
   justify-content: center;
   grid-gap: 4rem;
@@ -1148,23 +1159,30 @@ header div {
   grid-template-columns: auto auto auto;
 }
 
-.dashboard-info .publication-info-1{
+.dashboard-info .publication-info-1 {
   margin-bottom: 5rem;
 }
 
-.dashboard-info .publication-info-2{
+.dashboard-info .publication-info-2 {
   margin-bottom: 4rem;
 }
 
-.dashboard-info .publication-info-2 p{
+.dashboard-info .publication-info-2 p {
   margin-bottom: 1rem;
 }
 
-.dashboard-info .publication-info-3{
+.dashboard-info .publication-info-3 {
   margin-bottom: 5rem;
 }
 
 @media (max-width: 992px) {
+  .dashboard-image {
+    flex-direction: column;
+  }
+  .dashboard-image > div {
+    margin-right: 0;
+    margin-top: 3rem;
+  }
   .dashboard-logos {
     grid-gap: 3rem;
     grid-template-columns: auto auto;
@@ -1181,13 +1199,15 @@ header div {
     display: block;
     padding: 3rem;
   }
-  .dashboard-sections{
+  .dashboard-sections {
     padding-left: 4rem;
   }
-  .dashboard-snip, .snip-titile{
+  .dashboard-snip,
+  .snip-titile {
     padding-right: 4rem;
   }
-  .snip-example, .snip-list{
+  .snip-example,
+  .snip-list {
     padding-right: 6rem;
   }
   .dashboard-table {
@@ -1196,7 +1216,7 @@ header div {
   .snip-table {
     display: none;
   }
-  .snip-table-mobile{
+  .snip-table-mobile {
     display: block;
   }
   #d-1,
@@ -1237,20 +1257,20 @@ header div {
     width: 400px;
     margin-left: -1rem;
   }
-  .dashboard-info .publication-info-1{
+  .dashboard-info .publication-info-1 {
     margin-bottom: 1rem;
     padding: 3rem;
   }
 
-  .dashboard-info .publication-info-2{
+  .dashboard-info .publication-info-2 {
     margin-bottom: -2rem;
   }
 
-  .dashboard-info .publication-info-2 p{
+  .dashboard-info .publication-info-2 p {
     margin-bottom: -1rem;
   }
 
-  .dashboard-info .publication-info-3{
+  .dashboard-info .publication-info-3 {
     margin-bottom: 1rem;
     padding: 3rem;
   }
