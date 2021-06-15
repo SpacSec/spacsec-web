@@ -1,11 +1,13 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const routes = require("./routes/routes");
 const app = express();
 const mongoose = require("mongoose");
 const md5 = require("md5");
+
 const speakers = require("./public/json/speakers-data");
-app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.urlencoded({ extended: false }));
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
