@@ -29,7 +29,7 @@ const speakers = [
     linkedin: "#",
   },
   {
-    name: "Cem Avsar",
+    name: "Mr. Cem Avsar",
     image: "/images/CemAvsar.png",
     institute: "Managing Director at beSpace GmbH and Scientific Coordinator",
     location: "TU, Berlin, Germany",
