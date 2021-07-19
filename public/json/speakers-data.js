@@ -39,16 +39,6 @@ const speakers = [
     linkedin: "https://www.linkedin.com/in/cemavsar/",
   },
   {
-    name: "Dr. Vidhyacharan Bhaskar",
-    image: "/images/Dr.VidhyacharanBhaskar.png",
-    institute: "San Francisco State University",
-    location: "USA",
-    country: "",
-    workprofile:
-      "https://scholar.google.co.in/citations?user=l-v7IcMAAAAJ&hl=en",
-    linkedin: "#",
-  },
-  {
     name: "Dr. PK Garg",
     image: "/images/Dr.P.K.Garg.png",
     institute: "Indian Institute of Technology",
