@@ -146,8 +146,8 @@ const speakers = [
   {
     name: "Dr. Silva A.T.P.",
     image: "/images/Dr.SilvaA.T.P..png",
-    institute: "Manipal Academy of Higher Education",
-    location: "India",
+    institute: "University of Moratuwa",
+    location: "Sri Lanka",
     country: "",
     workprofile: "https://scholar.google.com/citations?user=FkmFxygAAAAJ&hl=en",
     linkedin: "#",
