@@ -1354,6 +1354,81 @@ header div {
     display: block;
   }
 }
+/***************** register *****************/
+.reg-pricing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reg-pricing-table{
+  width: 40%;
+  padding: 3rem;
+  border: solid 3px black;
+}
+
+.reg-pricing-table th, .reg-pricing-table td{
+  border: solid 1px black;
+  padding: 0.5rem;
+}
+
+.reg-pricing-table th, .reg-pricing-table tr td:nth-child(2){
+  text-align: center;
+}
+
+.reg-steps{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg-steps h4{
+  text-align: center;
+}
+
+.reg-steps ul{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.reg-steps ul li{
+  margin: 1rem;
+}
+
+.reg-steps h6{
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.reg-steps .steps-mob{
+  display: none;
+}
+
+.reg-steps .steps-pc li a{
+  width: 30rem;
+}
+
+@media (max-width: 992px) {
+  .reg-steps{
+    display: block;
+  }
+
+  .reg-steps .steps-pc{
+    display: none;
+  }
+
+  .reg-steps .steps-mob{
+    display: block;
+  }
+
+  .reg-steps .steps-mob li a{
+    width: 12rem;
+  }
+}
+
 /***************** footer *****************/
 footer {
   background: var(--primary-black);
