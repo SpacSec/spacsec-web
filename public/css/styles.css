@@ -904,7 +904,7 @@ header div {
 
 .sponsor-row {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   align-items: flex-start;
   justify-content: center;
 }
