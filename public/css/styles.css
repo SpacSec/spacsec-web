@@ -908,6 +908,10 @@ header div {
   justify-content: center;
 }
 
+.sponsor-img-4 {
+  width: 120px !important;
+}
+
 .sponsors .sponsor-row .sponsor {
   text-align: center;
   color: #3d3e53;
