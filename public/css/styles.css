@@ -425,8 +425,7 @@ header div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 2rem;
   background-color: var(--secondary-gray);
   /* background-color: var(--primary-black); */
 }
@@ -904,7 +903,7 @@ header div {
 
 .sponsor-row {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   align-items: flex-start;
   justify-content: center;
 }
@@ -912,7 +911,7 @@ header div {
 .sponsors .sponsor-row .sponsor {
   text-align: center;
   color: #3d3e53;
-  width: 370px;
+  width: 320px;
 }
 .sponsor-description {
   color: var(--secondary-blue);
@@ -931,7 +930,7 @@ header div {
 
 .sponsors .sponsor-row .sponsor:nth-of-type(3) img {
   width: 110px;
-} 
+}
 
 @media (max-width: 992px) {
   .member {
@@ -1359,76 +1358,78 @@ header div {
   }
 }
 /***************** register *****************/
-.reg-pricing{
+.reg-pricing {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.reg-pricing-table{
+.reg-pricing-table {
   width: 40%;
   padding: 3rem;
   border: solid 3px black;
 }
 
-.reg-pricing-table th, .reg-pricing-table td{
+.reg-pricing-table th,
+.reg-pricing-table td {
   border: solid 1px black;
   padding: 0.5rem;
 }
 
-.reg-pricing-table th, .reg-pricing-table tr td:nth-child(2){
+.reg-pricing-table th,
+.reg-pricing-table tr td:nth-child(2) {
   text-align: center;
 }
 
-.reg-steps{
+.reg-steps {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.reg-steps h4{
+.reg-steps h4 {
   text-align: center;
 }
 
-.reg-steps ul{
+.reg-steps ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: auto;
 }
 
-.reg-steps ul li{
+.reg-steps ul li {
   margin: 1rem;
 }
 
-.reg-steps h6{
+.reg-steps h6 {
   margin-top: 4rem;
   text-align: center;
 }
 
-.reg-steps .steps-mob{
+.reg-steps .steps-mob {
   display: none;
 }
 
-.reg-steps .steps-pc li a{
+.reg-steps .steps-pc li a {
   width: 30rem;
 }
 
 @media (max-width: 992px) {
-  .reg-steps{
+  .reg-steps {
     display: block;
   }
 
-  .reg-steps .steps-pc{
+  .reg-steps .steps-pc {
     display: none;
   }
 
-  .reg-steps .steps-mob{
+  .reg-steps .steps-mob {
     display: block;
   }
 
-  .reg-steps .steps-mob li a{
+  .reg-steps .steps-mob li a {
     width: 12rem;
   }
 }
