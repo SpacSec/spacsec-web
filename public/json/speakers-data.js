@@ -23,9 +23,9 @@ const speakers = [
     name: "Dr. Hari B. Hablani",
     image: "/images/Dr.HariB.Hablani.png",
     institute: "Indian Institute of Technology",
-    location: "Bombay",
+    location: "Indore",
     country: "India",
-    workprofile: "https://scholar.google.com/citations?user=wiB8pR4AAAAJ&hl=vi",
+    workprofile: "https://scholar.google.co.in/citations?user=wiB8pR4AAAAJ&hl=en",
     linkedin: "#",
   },
   {
