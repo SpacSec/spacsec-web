@@ -20,7 +20,7 @@ const speakers = [
     linkedin: "#",
   },
   {
-    name: "Dr. Hari B. Hablani",
+    name: "Dr. Hari Hablani",
     image: "/images/Dr.HariB.Hablani.png",
     institute: "Indian Institute of Technology",
     location: "Indore",
