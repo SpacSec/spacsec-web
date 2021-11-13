@@ -164,11 +164,11 @@ const speakers = [
   },*/
   {
     name: "Dr. Surendra Sunda",
-    image: "/images/Dr.SilvaA.T.P..png",
+    image: "/images/Dr.SurendraSunda.jpeg",
     institute: "GNSS Research Centre for ISNA",
     location: "SVPI Airport, Ahmedabad",
     country: "",
-    workprofile: "https://scholar.google.com/citations?user=FkmFxygAAAAJ&hl=en",
+    workprofile: "https://www.linkedin.com/in/surendra-sunda-a253229/?originalSubdomain=in",
     linkedin: "#",
   }
   
