@@ -162,6 +162,15 @@ const speakers = [
       "https://scholar.google.co.in/citations?user=Sph3lA0AAAAJ&hl=en",
     linkedin: "https://www.linkedin.com/in/anshuman-kalla-b41b23133/",
   },*/
+  {
+    name: "Dr. Surendra Sunda",
+    image: "/images/Dr.SilvaA.T.P..png",
+    institute: "GNSS Research Centre for ISNA",
+    location: "SVPI Airport, Ahmedabad",
+    country: "",
+    workprofile: "https://scholar.google.com/citations?user=FkmFxygAAAAJ&hl=en",
+    linkedin: "#",
+  }
   
 ];
 
