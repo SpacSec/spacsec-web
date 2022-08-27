@@ -3,6 +3,7 @@ const routes = require("./routes/routes");
 const app = express();
 const mongoose = require("mongoose");
 const md5 = require("md5");
+require('dotenv').config()
 
 const speakers = require("./public/json/speakers-data");
 
@@ -15,7 +16,7 @@ if (port == null || port == "") {
 
 //Database connection
 mongoose.connect(
-  "mongodb+srv://admin:admin@cluster0.g3jsw.mongodb.net/formResponses?retryWrites=true&w=majority",
+  process.env.DB_URL,
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
@@ -34,6 +35,7 @@ var messageSchema = new mongoose.Schema({
     required: true,
   },
 });
+
 messageSchema.set("timestamps", true);
 var userSchema = new mongoose.Schema({
   username: {
@@ -129,4 +131,4 @@ app.set("view engine", "ejs");
 //The router gets imported and used as middleware.
 app.use("/", routes);
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`App listening on port ${port}!`));
