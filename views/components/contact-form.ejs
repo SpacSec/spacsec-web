@@ -28,10 +28,11 @@
     ></iframe>
   </div>
   <div class="form">
-    <form action="/" method="post">
+    <form>
       <div class="form-group">
         <label for="InputEmail1">Name</label>
         <input
+          disabled
           required="true"
           name="iname"
           type="text"
@@ -44,6 +45,7 @@
       <div class="form-group">
         <label for="InputEmail">Email</label>
         <input
+        disabled
           required="true"
           name="iemail"
           type="email"
@@ -56,6 +58,7 @@
       <div class="form-group">
         <label for="FormControlTextarea">Message</label>
         <textarea
+          disabled
           required="true"
           name="imessage"
           class="form-control"
@@ -64,7 +67,7 @@
           placeholder="Your Message"
         ></textarea>
       </div>
-      <button type="submit" class="submit-btn btn btn btn-primary">
+      <button type="submit" class="submit-btn btn btn btn-primary" disabled>
         Send Message
       </button>
     </form>
